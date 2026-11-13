@@ -1,3 +1,11 @@
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(fonts/inter.woff2) format("woff2");
+}
+
 :root {
   --bg: #F6F3EA;
   --bg-alt: #EFEBDD;
@@ -543,3 +551,5 @@ a.chip:hover { border-color: var(--brand); }
   .requirements td:nth-of-type(1):not([colspan])::before { content: "Computador principal"; }
   .requirements td:nth-of-type(2):not([colspan])::before { content: "Outros computadores"; }
 }
+
+[data-release-hash] { overflow-wrap: anywhere; }

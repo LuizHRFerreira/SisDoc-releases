@@ -7,11 +7,11 @@
   <meta name="description" content="Baixe o instalador do SisDoc para Windows e siga o passo a passo para instalar no computador principal e nos outros computadores da clínica.">
   <meta name="theme-color" content="#143D30">
   <link rel="icon" type="image/png" href="assets/icon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="preload" href="assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/style.css">
-  <script>document.documentElement.classList.add("js")</script>
+  <script src="assets/early.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
@@ -57,6 +57,7 @@
             <span data-download-label>Baixar o SisDoc</span>
           </a>
         </div>
+        <p class="small muted" data-release-hash hidden style="margin-top:14px"></p>
         <p class="small muted" style="margin-top:14px">Já tem o SisDoc instalado? Não precisa baixar de novo: ele avisa e se atualiza sozinho. <a href="novidades.html">Veja as versões anteriores e o que mudou</a>.</p>
 
         <nav class="toc-chips" aria-label="Nesta página">
@@ -84,7 +85,8 @@
               <tr><th scope="row">Memória</th><td>4 GB (recomendado: 8 GB)</td><td>4 GB</td></tr>
               <tr><th scope="row">Espaço livre no disco</th><td>5 GB, para o programa, o banco de dados e os backups</td><td>1 GB</td></tr>
               <tr><th scope="row">Tela</th><td colspan="2">1366 × 768 ou maior (funciona a partir de 1024 × 768)</td></tr>
-              <tr><th scope="row">Rede</th><td>Na rede da clínica, de preferência por cabo, com IP fixo</td><td>Na mesma rede do principal (cabo ou Wi-Fi)</td></tr>
+              <tr><th scope="row">Rede</th><td>Na rede da clínica, de preferência por cabo, com IP fixo</td><td>Na mesma rede do principal, com os mesmos números no começo do IP (cabo ou Wi-Fi)</td></tr>
+              <tr><th scope="row">Tipo de rede no Windows</th><td>Privada. Em rede "Pública", os outros computadores não conseguem entrar</td><td>Qualquer uma</td></tr>
               <tr><th scope="row">Ligado</th><td>O dia todo e às 21:00, para o backup</td><td>Só quando for usar</td></tr>
               <tr><th scope="row">Internet</th><td colspan="2">Só para baixar o instalador e as atualizações. Para usar no dia a dia, não precisa</td></tr>
               <tr><th scope="row">Impressora</th><td colspan="2">Opcional. Receitas, atestados e relatórios abrem no navegador do Windows (o Edge já vem instalado) para imprimir</td></tr>
@@ -107,6 +109,7 @@
             <ul class="checklist">
               <li>Desligue a suspensão: <i>Opções de energia → Nunca</i></li>
               <li>Peça ao técnico um IP fixo para ele</li>
+              <li>Deixe a rede dele como <b>Privada</b>: <i>Configurações → Rede e Internet → a rede em uso → Tipo de perfil de rede → Privada</i></li>
             </ul>
           </div>
           <div class="card">
@@ -114,7 +117,7 @@
             <h3>Confira a rede e o acesso</h3>
             <p class="muted">Para instalar, o Windows pede permissão de administrador.</p>
             <ul class="checklist">
-              <li>Todos os computadores na mesma rede (o Wi-Fi de convidados não serve)</li>
+              <li>Todos os computadores na mesma rede, por exemplo todos em <code>192.168.0.x</code> (o Wi-Fi de convidados não serve)</li>
               <li>Vindo do SisDoc antigo? Tenha à mão o arquivo <code>.mdb</code> e a pasta <b>Anexos</b></li>
             </ul>
           </div>
@@ -133,7 +136,7 @@
           </li>
           <li>
             <h3>Passe pelo aviso azul do Windows</h3>
-            <p>Se aparecer a tela <b>"O Windows protegeu o computador"</b>, clique em <b>Mais informações</b> e depois em <b>Executar assim mesmo</b>. É normal: o aviso aparece porque o SisDoc ainda é pouco conhecido pelo Windows.</p>
+            <p>Se aparecer a tela <b>"O Windows protegeu o computador"</b>, clique em <b>Mais informações</b> e depois em <b>Executar assim mesmo</b>. É normal: o aviso aparece porque o instalador ainda não tem o certificado pago de editor de software que o Windows reconhece. Para ter certeza de que o arquivo é o original, veja <a href="seguranca.html#conferir">como conferir o instalador</a>.</p>
             <span class="smartscreen">Mais informações <span aria-hidden="true">→</span> <b>Executar assim mesmo</b></span>
             <p style="margin-top:12px">Depois, quando o Windows perguntar se o programa pode fazer alterações, clique em <b>Sim</b>.</p>
           </li>
@@ -157,7 +160,7 @@
           <li>
             <h3>Comece do zero ou traga o SisDoc antigo</h3>
             <p><b>Começar do zero:</b> crie o primeiro usuário, que será o administrador, e entre com ele.</p>
-            <p><b>Importar do SisDoc antigo:</b> escolha o arquivo <code>.mdb</code> e a pasta <b>Anexos</b>. Médicos, convênios, pacientes, consultas e prontuários vêm junto. Entre com o mesmo usuário e senha de antes.</p>
+            <p><b>Importar do SisDoc antigo:</b> escolha o arquivo <code>.mdb</code> e a pasta <b>Anexos</b>. Médicos, convênios, pacientes, consultas e prontuários vêm junto. No fim aparecem o usuário e a senha de um <b>administrador novo</b>: anote e entre com ele. Os usuários antigos entram como Recepção, com a senha de antes, e criam uma senha nova no primeiro acesso. Em <i>"Olá, seu nome" → Acessos e senhas</i>, mude para Médico quem for médico.</p>
           </li>
           <li>
             <h3>Cadastre a clínica</h3>
@@ -204,7 +207,7 @@
             <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></div>
             <h3>Backup</h3>
             <p class="muted">O computador principal faz uma cópia dos dados todo dia às 21:00, em <code>C:\ProgramData\SisDoc\Backups</code>. Deixe-o ligado nesse horário.</p>
-            <p class="muted">De vez em quando, copie essa pasta para um HD externo.</p>
+            <p class="muted">Toda semana, copie essa pasta para um HD externo e guarde-o fora do computador principal. Os backups têm dados de pacientes: veja <a href="seguranca.html#backup">como protegê-los</a>.</p>
           </div>
           <div class="card">
             <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></div>
@@ -232,10 +235,12 @@
               <tr><td>O instalador diz que o SisDoc está aberto</td><td>Feche o SisDoc e clique em <b>Avançar</b> de novo.</td></tr>
               <tr><td>O instalador diz que a porta 5432 já está em uso</td><td>Já existe outro banco PostgreSQL no computador. Chame o responsável pelo SisDoc antes de instalar como computador principal.</td></tr>
               <tr><td>A instalação do banco falhou</td><td>Confira se há espaço no disco e se você aceitou a permissão de administrador. Mande ao responsável pelo SisDoc o arquivo <code>%TEMP%\install-postgresql.log</code>.</td></tr>
-              <tr><td>O outro computador não encontra o principal</td><td>Confira se o principal está ligado e na mesma rede. Digite o nome ou o IP que aparecem no principal, no <b>SisDoc - Banco de dados</b>, aba <b>Estações</b>.</td></tr>
+              <tr><td>O outro computador não encontra o principal</td><td>Confira se o principal está ligado, na mesma rede e com a rede do Windows como <b>Privada</b> (o <b>SisDoc - Banco de dados</b> avisa na aba <b>Estações</b>). Digite o nome ou o IP que aparecem no principal, no <b>SisDoc - Banco de dados</b>, aba <b>Estações</b>.</td></tr>
               <tr><td>"A senha do banco de dados está errada"</td><td>Pegue a senha no principal: <i>Menu Iniciar → SisDoc → SisDoc - Banco de dados</i>, aba <b>Estações</b>.</td></tr>
               <tr><td>A agenda mostra "Falta cadastrar os médicos"</td><td>Entre com um médico ou administrador e cadastre em <i>"Olá, seu nome" → Médicos e convênios</i>.</td></tr>
-              <tr><td>O aviso de versão nova não aparece</td><td>Confira se o computador tem internet. Versões muito antigas (de antes de novembro de 2026) precisam ser atualizadas à mão uma vez, baixando o instalador aqui.</td></tr>
+              <tr><td>O aviso de versão nova não aparece</td><td>Confira se o computador tem internet. As primeiras versões (as de teste e os instaladores da 2.0.0 gerados antes de 05/11/2026) precisam ser atualizadas à mão uma vez, baixando o instalador aqui.</td></tr>
+              <tr><td>"O computador principal ainda não aceita conexão criptografada"</td><td>Atualize primeiro o SisDoc no computador principal e depois tente de novo neste.</td></tr>
+              <tr><td>"A atualização não tem a assinatura do responsável pelo SisDoc"</td><td>O arquivo baixado não é o original e não foi instalado. Não instale à mão: chame o responsável pelo SisDoc.</td></tr>
             </tbody>
           </table>
         </div>
@@ -267,6 +272,7 @@
             <li><a href="manual.html">Manual</a></li>
             <li><a href="manual.html#/atalhos">Atalhos de teclado</a></li>
             <li><a href="baixar.html#problemas">Se algo der errado</a></li>
+            <li><a href="seguranca.html">Segurança e privacidade</a></li>
           </ul>
         </div>
       </div>

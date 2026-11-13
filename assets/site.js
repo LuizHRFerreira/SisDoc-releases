@@ -40,6 +40,7 @@ function describeRelease(release) {
     version: release.tag_name.replace(/^v/, ""),
     url: installer.browser_download_url,
     sizeMb: Math.round(installer.size / 1024 / 1024),
+    sha256: /^sha256:[0-9a-f]{64}$/i.test(installer.digest || "") ? installer.digest.slice(7).toLowerCase() : null,
     date: new Date(release.published_at).toLocaleDateString("pt-BR", { day: "numeric", month: "long", year: "numeric" }),
   };
 }
@@ -85,6 +86,13 @@ async function fillReleaseInfo() {
       el.textContent = `Versão ${latest.version}, publicada em ${latest.date}`;
     });
     document.querySelectorAll("[data-release-size]").forEach(el => { el.textContent = `${latest.sizeMb} MB`; });
+    if (latest.sha256) {
+      document.querySelectorAll("[data-release-hash]").forEach(el => {
+        el.textContent = `Código SHA-256 do instalador: ${latest.sha256}`;
+        el.append(" · ", Object.assign(document.createElement("a"), { href: "seguranca.html#conferir", textContent: "como conferir" }));
+        el.hidden = false;
+      });
+    }
   } catch {
     document.querySelectorAll("[data-download-link]").forEach(link => { link.href = RELEASES_PAGE; });
   }

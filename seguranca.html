@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Segurança e privacidade · SisDoc</title>
+  <meta name="description" content="Onde ficam os dados dos pacientes, como o SisDoc protege o acesso, o que fica a cargo da clínica, como conferir o instalador e a privacidade deste site.">
+  <meta name="theme-color" content="#143D30">
+  <link rel="icon" type="image/png" href="assets/icon.png">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="preload" href="assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/early.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="./" aria-label="SisDoc, página inicial">
+        <img class="logo-light" src="assets/logo.png" alt="SisDoc" width="104" height="34">
+        <img class="logo-dark" src="assets/logo-white.png" alt="SisDoc" width="104" height="34">
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir o menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <nav class="nav" id="menu" aria-label="Principal">
+        <a href="./">Início</a>
+        <a href="baixar.html">Baixar e instalar</a>
+        <a href="manual.html">Manual</a>
+        <a href="novidades.html">Novidades</a>
+        <a class="btn btn-primary btn-sm" href="baixar.html">Baixar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <div class="page-head">
+      <div class="container narrow">
+        <p class="eyebrow">Segurança e privacidade</p>
+        <h1>Os dados dos pacientes ficam na clínica</h1>
+        <p class="lead">O que o SisDoc faz para proteger as informações, o que fica a cargo da clínica e o que o SisDoc não faz.</p>
+        <nav class="toc-chips" aria-label="Nesta página">
+          <a href="#dados">Onde ficam os dados</a>
+          <a href="#protecoes">Proteções do programa</a>
+          <a href="#clinica">O que a clínica faz</a>
+          <a href="#limites">O que o SisDoc não faz</a>
+          <a href="#conferir">Conferir o instalador</a>
+          <a href="#backup">Backup</a>
+          <a href="#site">Privacidade deste site</a>
+        </nav>
+      </div>
+    </div>
+
+    <section id="dados" style="padding-top:64px;padding-bottom:64px">
+      <div class="container narrow">
+        <h2>Onde ficam os dados</h2>
+        <p>O SisDoc é instalado nos computadores da clínica. O banco de dados fica no <b>computador principal</b>, e os outros computadores se ligam a ele pela rede local. Não existe servidor do SisDoc na internet e não há cópia dos dados em nuvem.</p>
+        <ul class="checklist">
+          <li>Quem desenvolve o SisDoc <b>não recebe e não tem acesso</b> aos dados dos pacientes.</li>
+          <li>Pela internet, o SisDoc só pergunta ao GitHub se há versão nova e baixa a atualização. Nenhum dado de paciente vai junto.</li>
+          <li>A ativação de cada computador é conferida no próprio computador, sem enviar nada.</li>
+        </ul>
+        <div class="callout info" style="margin-top:20px">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 16v-4M12 8h.01"/></svg>
+          <p>Pela Lei Geral de Proteção de Dados (Lei 13.709/2018), a <b>clínica é a controladora</b> dos dados dos pacientes. Dados de saúde são dados pessoais sensíveis (art. 11) e pedem cuidado redobrado. O SisDoc é a ferramenta: ajuda a cumprir as regras, mas não substitui as decisões e os cuidados da clínica.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-alt" id="protecoes" style="padding-top:64px;padding-bottom:64px">
+      <div class="container narrow">
+        <h2>Proteções do programa</h2>
+        <div class="cards two" style="margin-top:24px">
+          <div class="card">
+            <h3>Quem entra</h3>
+            <ul class="checklist">
+              <li>Cada pessoa tem o próprio usuário e senha, com pelo menos 8 caracteres</li>
+              <li>Recepção não vê prontuário nem exames</li>
+              <li>Depois de 5 senhas erradas, o usuário fica bloqueado por 5 minutos</li>
+              <li>Senha criada por outra pessoa ou vinda do SisDoc antigo é trocada no primeiro acesso</li>
+              <li>A tela se tranca depois de 10 minutos sem uso, inclusive as janelas abertas</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>O que fica registrado</h3>
+            <ul class="checklist">
+              <li>Cada anotação do prontuário mostra quem escreveu e quando</li>
+              <li>Ficam registrados: entradas e senhas erradas, quem abriu ou imprimiu prontuário, exames, documentos e anexos, e mudanças de usuários e senhas</li>
+              <li>O administrador vê tudo no relatório <b>Registro de acessos</b></li>
+              <li>Paciente não é apagado: fica inativo, com o histórico guardado</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Entre os computadores</h3>
+            <ul class="checklist">
+              <li>Os outros computadores conversam com o principal com criptografia</li>
+              <li>O principal só aceita os outros computadores da mesma rede local, e só com criptografia</li>
+              <li>O firewall do Windows só abre o banco em rede privada, e só para a rede da clínica</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Instalação e atualizações</h3>
+            <ul class="checklist">
+              <li>Cada computador é ativado uma vez pelo responsável pelo SisDoc</li>
+              <li>Antes de instalar uma atualização, o SisDoc confere o arquivo e a assinatura digital do responsável. Se não conferir, apaga e não instala</li>
+              <li>A senha do banco fica criptografada em cada computador, e os backups ficam numa pasta que só o administrador do Windows abre</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="clinica" style="padding-top:64px;padding-bottom:64px">
+      <div class="container narrow">
+        <h2>O que a clínica faz</h2>
+        <p class="lead" style="margin-bottom:20px">Nenhum programa protege sozinho. Estes cuidados ficam com a clínica:</p>
+        <ul class="checklist">
+          <li>Cada pessoa usa o próprio usuário. Não anote senhas em papel perto do computador nem empreste o acesso.</li>
+          <li>Quando alguém sai da clínica, desative o usuário dessa pessoa em <i>"Olá, seu nome" → Acessos e senhas</i>.</li>
+          <li>Dê a cada pessoa só o acesso que o trabalho dela pede, e confira de vez em quando o <b>Registro de acessos</b>.</li>
+          <li>Mantenha o Windows atualizado, com o antivírus ligado, e cada computador com senha de entrada.</li>
+          <li>Use uma senha forte no Wi-Fi da clínica e deixe os visitantes no Wi-Fi de convidados.</li>
+          <li>Faça e guarde os backups como explicado <a href="#backup">abaixo</a>.</li>
+          <li>Informe aos pacientes como os dados deles são usados e guardados, como pede a LGPD.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section-alt" id="limites" style="padding-top:64px;padding-bottom:64px">
+      <div class="container narrow">
+        <h2>O que o SisDoc não faz</h2>
+        <div class="callout" style="margin-top:20px">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 2 21h20z"/><path d="M12 10v4M12 18h.01"/></svg>
+          <p>Para não haver dúvida sobre o valor legal dos documentos:</p>
+        </div>
+        <ul class="checklist" style="margin-top:16px">
+          <li>O SisDoc <b>não tem certificação SBIS/CFM</b> de sistema de registro eletrônico de saúde.</li>
+          <li>O SisDoc <b>não assina documentos com certificado digital ICP-Brasil</b>. Receitas, atestados e pedidos de exame são impressos e assinados à mão pelo médico.</li>
+          <li>Por isso, o prontuário eletrônico do SisDoc <b>não dispensa o prontuário em papel</b> assinado, nos casos em que as normas do CFM exigem.</li>
+          <li>O prontuário deve ser guardado por pelo menos 20 anos depois do último registro (Resolução CFM 1.821/2007). No SisDoc, isso depende dos backups que a clínica faz e guarda.</li>
+        </ul>
+        <p class="small muted" style="margin-top:16px">Esta página explica o funcionamento do programa e não é orientação jurídica. Em caso de dúvida sobre as obrigações da clínica, consulte um advogado ou o Conselho Regional de Medicina.</p>
+      </div>
+    </section>
+
+    <section id="conferir" style="padding-top:64px;padding-bottom:64px">
+      <div class="container narrow">
+        <h2>Conferir o instalador</h2>
+        <p>Baixe o SisDoc só por este site ou pela página de versões do <a href="https://github.com/LuizHRFerreira/SisDoc-releases/releases">GitHub do SisDoc</a>. Para ter certeza de que o arquivo não foi trocado no caminho:</p>
+        <ol>
+          <li>Na pasta <b>Downloads</b>, clique com o botão direito num espaço vazio e escolha <b>Abrir no Terminal</b> (ou abra o <b>PowerShell</b> pelo Menu Iniciar e entre na pasta).</li>
+          <li>Digite <code>Get-FileHash .\SisDoc-Setup-*.exe</code> e aperte <kbd>Enter</kbd>.</li>
+          <li>Compare o código que aparece em <b>Hash</b> com o <b>código SHA-256</b> mostrado na página <a href="baixar.html">Baixar e instalar</a>, embaixo do botão. As letras maiúsculas ou minúsculas não importam; o resto tem que ser igual. Se for diferente, apague o arquivo e não instale.</li>
+        </ol>
+        <p>As atualizações automáticas fazem essa conferência sozinhas e, além disso, conferem a assinatura digital do responsável pelo SisDoc.</p>
+      </div>
+    </section>
+
+    <section class="section-alt" id="backup" style="padding-top:64px;padding-bottom:64px">
+      <div class="container narrow">
+        <h2>Backup</h2>
+        <p>O computador principal faz uma cópia dos dados todo dia às 21:00, em <code>C:\ProgramData\SisDoc\Backups</code>. Os backups têm todos os dados dos pacientes e <b>não são criptografados</b>. Para protegê-los:</p>
+        <ul class="checklist">
+          <li>Toda semana, copie a pasta para um HD externo e guarde-o fora do computador principal, de preferência fora da clínica. Assim um defeito, um roubo ou um vírus não leva os dados e o backup juntos.</li>
+          <li>Ligue o <b>BitLocker</b> (Windows 10 e 11 Pro) no computador principal e no HD externo. Se o computador ou o HD forem roubados, os dados não podem ser lidos.</li>
+          <li>De vez em quando, abra o <b>SisDoc - Banco de dados</b>, aba <b>Backup</b>, e confira se há um backup de cada dia.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="site" style="padding-top:64px;padding-bottom:64px">
+      <div class="container narrow">
+        <h2>Privacidade deste site</h2>
+        <ul class="checklist">
+          <li>Este site não tem cadastro, formulário, cookies, anúncios nem contador de visitas.</li>
+          <li>Ele fica hospedado no GitHub Pages, e o instalador é baixado do GitHub. O GitHub recebe o endereço IP de quem visita ou baixa, como qualquer site, conforme a <a href="https://docs.github.com/pt/site-policy/privacy-policies/github-general-privacy-statement">declaração de privacidade do GitHub</a>.</li>
+          <li>Para mostrar a versão mais recente e as novidades, o navegador consulta a lista de versões no GitHub e guarda o resultado por 10 minutos, só nesta aba.</li>
+          <li>As fontes e imagens vêm do próprio site, sem serviços de terceiros.</li>
+        </ul>
+        <p class="small muted" style="margin-top:24px">Atualizado em 13/11/2026.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img class="logo-light" src="assets/logo.png" alt="SisDoc" width="91" height="30">
+          <img class="logo-dark" src="assets/logo-white.png" alt="SisDoc" width="91" height="30">
+          <p>Sistema para consultório médico: agenda, pacientes, documentos e prontuários.</p>
+        </div>
+        <div>
+          <h4>Programa</h4>
+          <ul>
+            <li><a href="baixar.html">Baixar</a></li>
+            <li><a href="baixar.html#instalar">Como instalar</a></li>
+            <li><a href="baixar.html#requisitos">Requisitos mínimos</a></li>
+            <li><a href="novidades.html">Novidades</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ajuda</h4>
+          <ul>
+            <li><a href="manual.html">Manual</a></li>
+            <li><a href="manual.html#/atalhos">Atalhos de teclado</a></li>
+            <li><a href="baixar.html#problemas">Se algo der errado</a></li>
+            <li><a href="seguranca.html" aria-current="page">Segurança e privacidade</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> SisDoc</span>
+        <span data-release-version></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/site.js" defer></script>
+</body>
+</html>
