@@ -420,6 +420,45 @@
       "colors": []
     },
     {
+      "subject": "Relatórios",
+      "question": "Como ver quem acessou o prontuário de um paciente?",
+      "steps": [
+        "Só o administrador: em \"Relatórios\", escolha \"Registro de acessos (LGPD)\" e o período.",
+        "Aparece quem entrou no SisDoc, quem viu, imprimiu ou escreveu no prontuário, quem viu exames e documentos, quem abriu anexos e quem mudou acessos, com data, hora e paciente.",
+        "O registro guarda só o que foi feito, nunca o conteúdo do prontuário."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Uso geral",
+      "question": "O SisDoc mostrou \"SisDoc bloqueado\". O que houve?",
+      "steps": [
+        "Depois de 10 minutos sem mexer, o SisDoc bloqueia a tela para ninguém ver os dados dos pacientes.",
+        "Digite a sua senha e clique em \"Desbloquear\": tudo continua como estava, inclusive um atendimento aberto.",
+        "Se for outra pessoa usar o computador, clique em \"Entrar com outro usuário\"."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Uso geral",
+      "question": "O SisDoc pediu para criar uma senha nova.",
+      "steps": [
+        "Isso acontece no primeiro acesso, quando a senha foi criada por outra pessoa ou veio do SisDoc antigo.",
+        "Digite a senha que recebeu, depois a senha nova (pelo menos 8 caracteres, diferente do usuário) duas vezes.",
+        "Para trocar a senha quando quiser: \"Olá, seu nome\" > \"Trocar minha senha\"."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Uso geral",
+      "question": "Apareceu \"Muitas tentativas com a senha errada\".",
+      "steps": [
+        "Depois de 5 senhas erradas seguidas, o usuário fica bloqueado por 5 minutos. Espere e tente de novo com calma.",
+        "Se esqueceu a senha, peça ao administrador para trocar em \"Acessos e senhas\". No próximo acesso o SisDoc pede uma senha nova."
+      ],
+      "colors": []
+    },
+    {
       "subject": "Uso geral",
       "question": "Posso deixar este manual aberto enquanto uso o SisDoc?",
       "steps": [
