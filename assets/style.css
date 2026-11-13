@@ -529,3 +529,17 @@ mark { background: color-mix(in srgb, var(--accent) 30%, transparent); color: in
   th, td { padding: 12px 14px; }
 }
 .visually-hidden { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.requirements th[scope="row"] { background: var(--surface-muted); width: 24%; font-size: .92rem; }
+.requirements thead th:first-child { background: var(--surface-muted); }
+a.chip { text-decoration: none; }
+a.chip:hover { border-color: var(--brand); }
+@media (max-width: 560px) {
+  .requirements thead { display: none; }
+  .requirements tr { display: block; border-bottom: 1px solid var(--border); padding: 12px 14px; }
+  .requirements tr:last-child { border-bottom: 0; }
+  .requirements th[scope="row"], .requirements td { display: block; width: auto; border: 0; padding: 2px 0; background: none; }
+  .requirements th[scope="row"] { color: var(--heading); margin-bottom: 4px; }
+  .requirements td:not([colspan])::before { display: block; font-size: .78rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: .04em; margin-top: 6px; }
+  .requirements td:nth-of-type(1):not([colspan])::before { content: "Computador principal"; }
+  .requirements td:nth-of-type(2):not([colspan])::before { content: "Outros computadores"; }
+}
