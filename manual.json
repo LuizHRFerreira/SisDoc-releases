@@ -1,0 +1,746 @@
+{
+  "topics": [
+    {
+      "subject": "Agenda",
+      "question": "Como marcar uma consulta?",
+      "steps": [
+        "Clique no botão verde \"Marcar consulta\", no alto da tela (ou aperte Ctrl + M). O dia já vem com o dia aberto na agenda.",
+        "\"Primeira consulta\" vem desmarcada: marque se for o caso.",
+        "Digite o nome do paciente. Se ele já tem cadastro, escolha o nome na lista que aparece.",
+        "Digite a hora só com números (0830 vira 08:30), clique num dos horários livres do dia, à direita, ou em \"Procurar horário livre\" para ver os próximos dias com vaga.",
+        "Clique em \"Marcar consulta\" para confirmar."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Agenda",
+      "question": "Como fazer um encaixe?",
+      "steps": [
+        "Marque a consulta normalmente, na hora que quiser (por exemplo, 08:10).",
+        "Se já tiver consulta nesse horário, o SisDoc avisa e pergunta se é um encaixe. Clique em \"Marcar encaixe\".",
+        "Na agenda, as consultas no mesmo horário aparecem lado a lado."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Agenda",
+      "question": "Como achar um horário livre?",
+      "steps": [
+        "Na janela de marcar consulta, clique em \"Procurar horário livre\", embaixo do dia e da hora.",
+        "Aparecem os próximos dias com vaga e os horários livres de cada um. Dá para escolher só um dia da semana ou só manhã ou tarde.",
+        "Clique no horário: o dia e a hora são preenchidos na marcação."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Agenda",
+      "question": "Como usar a lista de espera?",
+      "steps": [
+        "Para pôr alguém que ainda não tem consulta, clique em \"Pôr alguém na lista\", no alto da lista.",
+        "Ao marcar a consulta, marque também \"Pôr também na lista de espera\": o paciente fica com a data marcada e entra na lista para adiantar se abrir vaga.",
+        "Quando abrir uma vaga, clique em \"Lista de espera\", no alto da tela. Cada paciente mostra a consulta que já tem marcada.",
+        "Clique em \"Adiantar\" para mudar a consulta dele para a vaga (ou \"Marcar\", se ele ainda não tiver consulta). Ele sai da lista sozinho.",
+        "Na própria lista dá para pôr alguém que ainda não tem consulta, em \"Pôr na lista\"."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Agenda",
+      "question": "Como cadastrar o horário de atendimento do médico?",
+      "steps": [
+        "Clique em \"Horários e bloqueios\", embaixo do nome do médico na agenda.",
+        "Escolha quanto tempo dura cada consulta e marque os dias que ele atende. Ao marcar o dia, as horas já vêm preenchidas (08:00 às 12:00 e 14:00 às 18:00): mude só o que for diferente. Para não ter horário da tarde, apague as duas horas.",
+        "Clique em \"Salvar horários\". A agenda passa a mostrar os horários livres."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Agenda",
+      "question": "Como bloquear a agenda (férias, congresso, viagem)?",
+      "steps": [
+        "Clique em \"Horários e bloqueios\" e abra a aba \"Bloqueios\".",
+        "Escolha o primeiro e o último dia, o dia todo ou só algumas horas, e escreva o motivo.",
+        "Clique em \"Bloquear\". Na agenda, o dia mostra um aviso avermelhado com o motivo. Consultas já marcadas continuam marcadas: avise os pacientes.",
+        "Dá para marcar num horário bloqueado, mas o SisDoc avisa e pergunta antes."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Agenda",
+      "question": "O paciente chegou. O que eu faço?",
+      "steps": [
+        "Clique no nome do paciente na agenda. O cartão se abre com os botões.",
+        "Clique no botão escuro \"Registrar chegada\".",
+        "Quando ele entrar no consultório, o mesmo botão vira \"Iniciar atendimento\".",
+        "Na recepção, o botão depois vira \"Finalizar atendimento\". O médico finaliza pela tela de atendimento (botão \"Abrir atendimento\").",
+        "Só um paciente fica em atendimento por vez: ao iniciar outro, o anterior volta para a sala de espera e o que foi escrito fica guardado."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Agenda",
+      "question": "O paciente não veio. O que eu faço?",
+      "steps": [
+        "Clique no nome do paciente na agenda e depois em \"Faltou\".",
+        "Marcou falta por engano? Clique de novo nele e em \"Voltar para agendada\"."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Agenda",
+      "question": "Registrei a chegada (ou o atendimento) por engano. Como volto?",
+      "steps": [
+        "Clique no nome do paciente na agenda.",
+        "O cartão se abre e mostra um botão para voltar um passo: \"Desfazer chegada\", \"Voltar para a sala de espera\" ou \"Reabrir atendimento\".",
+        "Pode clicar quantas vezes precisar: cada clique volta um passo."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Agenda",
+      "question": "Como mudar o dia, a hora ou os dados de uma consulta?",
+      "steps": [
+        "Clique duas vezes no cartão da consulta (ou clique uma vez e em \"Editar agendamento\").",
+        "Altere o que precisar e clique em \"Salvar agendamento\". Isso muda só o agendamento; os dados do paciente mudam em \"Abrir ficha\"."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Agenda",
+      "question": "Marquei uma consulta só com o nome. Como faço o cadastro completo?",
+      "steps": [
+        "Para marcar, basta o nome e o telefone. Na agenda aparece \"Sem cadastro\" embaixo do nome.",
+        "Quando der, clique no paciente e em \"Finalizar cadastro\". A ficha abre já com o nome e o telefone."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Agenda",
+      "question": "Como desmarcar uma consulta?",
+      "steps": [
+        "Clique no nome do paciente na agenda e depois em \"Excluir\".",
+        "Confirme. O horário fica livre para outro paciente."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Agenda",
+      "question": "Cliquei no botão errado. Como desfaço?",
+      "steps": [
+        "Aperte Ctrl + Z: a última mudança na agenda (chegada, atendimento, falta, troca de horário ou exclusão) é desfeita.",
+        "Apertando de novo, desfaz a anterior, e assim por diante."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Agenda",
+      "question": "O que significam as cores da agenda?",
+      "steps": [],
+      "colors": [
+        {
+          "color": "scheduled",
+          "meaning": "Marcada: o paciente ainda não chegou."
+        },
+        {
+          "color": "late",
+          "meaning": "Atrasado: passou do horário e o paciente ainda não chegou."
+        },
+        {
+          "color": "arrived",
+          "meaning": "Chegou: o paciente está na sala de espera."
+        },
+        {
+          "color": "arrivedLate",
+          "meaning": "Chegou atrasado: chegou depois do horário marcado."
+        },
+        {
+          "color": "inProgress",
+          "meaning": "Em atendimento: o paciente está no consultório."
+        },
+        {
+          "color": "completed",
+          "meaning": "Atendida: o atendimento terminou."
+        },
+        {
+          "color": "noShow",
+          "meaning": "Faltou: o paciente não veio."
+        },
+        {
+          "color": "next",
+          "meaning": "Próximo: quem deve ser chamado agora."
+        },
+        {
+          "color": "followUp",
+          "meaning": "Retorno: o paciente está voltando para mostrar exames ou continuar o tratamento."
+        },
+        {
+          "color": "firstVisit",
+          "meaning": "1ª consulta: é a primeira vez que o paciente vem."
+        }
+      ]
+    },
+    {
+      "subject": "Agenda",
+      "question": "Quem é o próximo paciente?",
+      "steps": [
+        "O cartão de quem deve ser chamado tem a etiqueta verde \"Próximo\".",
+        "Ao abrir o dia de hoje, a agenda já rola até ele."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Agenda",
+      "question": "Como ver a agenda de outro dia ou de vários dias?",
+      "steps": [
+        "Clique no dia desejado no calendário, à esquerda, ou use as setas ao lado da data.",
+        "Para ver vários dias (até 7), segure o clique no primeiro dia do calendário e arraste até o último. Cada dia vira uma coluna de cartões; as setas andam o mesmo número de dias.",
+        "Clicando num dia só do calendário, a agenda volta a mostrar um dia.",
+        "Para voltar, clique em \"Hoje\"."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Agenda",
+      "question": "Como imprimir a agenda?",
+      "steps": [
+        "Clique em \"Imprimir\" e escolha \"Agenda do dia\" (todas as consultas) ou \"Só os atendidos\".",
+        "A agenda abre no navegador, já pronta para imprimir."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Atendimento",
+      "question": "Como atender um paciente (médico)?",
+      "steps": [
+        "Na agenda, clique no paciente e em \"Iniciar atendimento\". A tela de atendimento abre sozinha.",
+        "À esquerda ficam a ficha resumida, os alertas, as últimas consultas, anotações, exames e documentos. Clique em qualquer um para ver inteiro.",
+        "Na aba \"Anotação\", escreva o que aconteceu na consulta. Dá para anexar arquivos.",
+        "No fim, clique em \"Finalizar atendimento\", no alto à direita: a anotação vai para o prontuário e a consulta fica como atendida.",
+        "Se precisar voltar para a agenda no meio, clique em \"Voltar à agenda\", no alto à esquerda. O que foi escrito fica guardado. Para continuar, clique no botão \"Atendendo\" (bege, com um ponto verde), no alto, ou em \"Abrir atendimento\" na agenda."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Atendimento",
+      "question": "Como fazer uma receita?",
+      "steps": [
+        "Na tela de atendimento, abra a aba \"Receita\".",
+        "Digite o nome do remédio. Se ele estiver cadastrado, quantidade, uso e como tomar já vêm preenchidos.",
+        "Clique em \"Pôr na receita\". Repita para cada remédio.",
+        "Clique em \"Imprimir receita\". A receita fica guardada em \"Documentos emitidos\" para imprimir de novo."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Atendimento",
+      "question": "Como marcar um remédio como uso contínuo?",
+      "steps": [
+        "Na aba \"Receita\", antes de clicar em \"Pôr na receita\", marque \"Uso contínuo\".",
+        "Na receita sai escrito \"(uso contínuo)\" ao lado do remédio.",
+        "Se o remédio é sempre de uso contínuo, marque isso no cadastro de medicamentos: ele já vem marcado."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Atendimento",
+      "question": "Como fazer um atestado?",
+      "steps": [
+        "Na tela de atendimento, abra a aba \"Atestado\" e escolha um modelo.",
+        "O nome do paciente já entra no texto, e você pode mudar o que quiser.",
+        "Clique em \"Imprimir atestado\". Ele sai com a cidade, a data e o seu nome para assinar."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Atendimento",
+      "question": "Como pedir exames?",
+      "steps": [
+        "Na tela de atendimento, abra a aba \"Pedido de exames\".",
+        "Clique nos exames da lista para marcar (vale clicar em qualquer parte do quadro).",
+        "Clique em \"Imprimir pedido\". Com mais de um exame, o SisDoc pergunta se é tudo numa folha ou uma folha para cada.",
+        "Faltou um exame na lista? Clique em \"Editar lista\" e cadastre: abre uma janela por cima, sem sair do atendimento."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Médico",
+      "question": "Como criar ou mudar um modelo de atestado ou de exames?",
+      "steps": [
+        "Clique em \"Olá, seu nome\", no canto de cima, e em \"Modelos de atestado\" ou \"Modelos de exames\". No atendimento, \"Editar modelos\" e \"Editar lista\" abrem a mesma tela numa janela por cima.",
+        "Clique num modelo para mudar, ou em \"Novo modelo\".",
+        "No atestado, %name vira o nome do paciente e %suf vira o \"o\" ou \"a\" do fim da palavra.",
+        "Clique em \"Salvar modelo\". \"Excluir modelo\" tira da lista; os documentos já impressos não mudam."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Médico",
+      "question": "Como cadastrar um médico ou um convênio?",
+      "steps": [
+        "Clique em \"Olá, seu nome\", no canto de cima, e em \"Médicos e convênios\". Num banco novo, esta tela abre sozinha com os \"Primeiros passos\".",
+        "Médico: clique em \"Novo médico\", preencha o nome, o CRM (sai embaixo da assinatura nos documentos) e quanto dura a consulta. Se ele for usar o SisDoc, crie o usuário e a senha ali mesmo.",
+        "Depois clique em \"Horário de atendimento\" para dizer os dias e horas em que ele atende.",
+        "Convênio: digite o nome em \"Convênios\" e clique em \"Adicionar\". \"Desativar\" tira o convênio da marcação sem apagar o que já foi feito.",
+        "Médico desmarcado como \"Ativo\" sai da agenda, mas o que ele escreveu continua no prontuário."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Médico",
+      "question": "Como cadastrar um medicamento?",
+      "steps": [
+        "Clique em \"Olá, seu nome\", no canto de cima, e em \"Medicamentos\".",
+        "Clique em \"Novo medicamento\", preencha o nome como deve sair na receita e, se quiser, a quantidade e como tomar.",
+        "Para tirar um remédio da lista sem apagar, desmarque \"Ativo\". Para apagar de vez, clique em \"Excluir\"; as receitas já feitas não mudam.",
+        "No atendimento, o link \"Cadastro\" ao lado de \"Remédio\" abre esta tela numa janela por cima; ao fechar, você volta para o atendimento."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Médico",
+      "question": "Como criar um acesso ou trocar uma senha?",
+      "steps": [
+        "Clique em \"Olá, seu nome\", no canto de cima, e em \"Acessos e senhas\".",
+        "Para uma pessoa nova, clique em \"Novo acesso\", preencha nome, usuário, perfil e senha.",
+        "Para trocar a senha de alguém, clique no nome dela e digite a nova senha duas vezes.",
+        "Para tirar o acesso, desmarque \"Pode entrar no SisDoc\" ou clique em \"Excluir\". Quem já escreveu no prontuário só é desativado, para o histórico continuar mostrando o nome.",
+        "O médico cuida dos acessos da recepção e da própria senha. Só o administrador cria ou muda um administrador, troca a senha de outro médico e liga um acesso a um médico já cadastrado. Sempre fica pelo menos um administrador."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Pacientes",
+      "question": "Como cadastrar um paciente novo?",
+      "steps": [
+        "Clique em \"Pacientes\", no alto, e depois no botão verde \"Novo paciente\".",
+        "O formulário vazio aparece ao lado. Só o nome é obrigatório; o resto pode ser completado depois.",
+        "No campo Sexo, basta apertar M (masculino) ou F (feminino).",
+        "Clique em \"Salvar paciente\" (ou em \"Salvar e marcar consulta\", se ele já vai marcar).",
+        "O convênio precisa ser um dos cadastrados: clique no campo para ver a lista."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Pacientes",
+      "question": "Como encontrar um paciente?",
+      "steps": [
+        "Clique em \"Pacientes\", no alto (ou aperte Ctrl + F).",
+        "A lista mostra todos os pacientes em ordem alfabética. Clique numa letra, à esquerda da lista, para ir direto a ela; ou segure e deslize pelas letras.",
+        "Ou digite parte do nome, o número do prontuário ou o CPF. A lista mostra quem combina.",
+        "A lista se atualiza sozinha, inclusive quando alguém cadastra ou muda um paciente em outro computador. Se a rede falhar, clique em \"Atualizar\" (ou aperte F5)."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Pacientes",
+      "question": "Onde ficam as informações do paciente?",
+      "steps": [
+        "A ficha tem abas no alto: Dados, Consultas, Prontuário, Exames, Documentos e Anexos.",
+        "Em \"Documentos\" ficam as receitas, atestados e pedidos de exames emitidos: clique para ver inteiro ou no botão da impressora para imprimir de novo.",
+        "A Recepção vê Dados, Consultas e Anexos; prontuário, exames e documentos são só do médico."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Pacientes",
+      "question": "Quando o paciente veio (e quando vem de novo)?",
+      "steps": [
+        "Abra a ficha do paciente e clique na aba \"Consultas\".",
+        "Aparecem as consultas marcadas e as já feitas, da mais nova para a mais antiga, com a hora, o médico e a situação.",
+        "Clique em \"Ver todas\" para ver a lista inteira."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Pacientes",
+      "question": "Como escrever no prontuário?",
+      "steps": [
+        "Abra o paciente e escreva no quadro \"Nova anotação\".",
+        "Clique em \"Registrar no prontuário\". A anotação fica guardada com a data, a hora e o médico que escreveu.",
+        "Todo médico vê o prontuário inteiro do paciente, com o nome de quem escreveu cada anotação. A recepção não vê o prontuário nem os exames."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Pacientes",
+      "question": "Como imprimir o prontuário?",
+      "steps": [
+        "Abra o paciente e clique na aba \"Prontuário\".",
+        "Marque a caixinha das anotações que quer imprimir, ou escolha as datas em \"De\" e \"Até\" para marcar as de um período. \"Marcar todas\" pega o prontuário inteiro.",
+        "Se quiser, marque \"Cada anotação numa folha\".",
+        "Clique em \"Imprimir\". Cada anotação sai com a data, a hora e o nome do médico."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Pacientes",
+      "question": "Como registrar o resultado de um exame?",
+      "steps": [
+        "Abra o paciente e vá até \"Resultados de exames\".",
+        "Preencha o nome do exame, escolha a data no calendário e escreva o resultado.",
+        "Clique em \"Registrar resultado\"."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Pacientes",
+      "question": "Como anexar um laudo, foto ou documento?",
+      "steps": [
+        "No exame ou na anotação do prontuário: clique em \"Anexar arquivo\" antes de registrar. O arquivo aparece em amarelo e é guardado junto quando você clica em \"Registrar\".",
+        "Para outros documentos (encaminhamento, RG, carteirinha): vá até \"Documentos do paciente\" e clique em \"Anexar arquivo\".",
+        "Dá para anexar PDF, JPG ou PNG de até 20 MB. Para abrir, clique no nome do arquivo, mesmo antes de registrar (o que você escreveu continua lá).",
+        "Para excluir um documento da aba \"Anexos\", clique em \"Excluir\" ao lado dele. Arquivos presos a uma anotação ou a um exame fazem parte do prontuário e não são excluídos."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Pacientes",
+      "question": "Como fechar a ficha do paciente?",
+      "steps": [
+        "Aperte Esc ou clique num espaço vazio fora da ficha."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Pacientes",
+      "question": "Como corrigir os dados de um paciente?",
+      "steps": [
+        "Abra o paciente, corrija os campos em \"Dados do paciente\" e clique em \"Salvar dados\" (ou aperte Ctrl + S)."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Relatórios",
+      "question": "Como tirar um relatório?",
+      "steps": [
+        "Clique em \"Olá, seu nome\", no canto de cima, e em \"Relatórios\". Escolha o relatório na lista da esquerda.",
+        "Se quiser, mude o período ou os médicos: clique em \"Todos os médicos\" e marque um ou mais. O resultado aparece na hora.",
+        "Para imprimir, clique em \"Imprimir\"."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Uso geral",
+      "question": "Posso deixar este manual aberto enquanto uso o SisDoc?",
+      "steps": [
+        "Pode. O manual abre ao lado e o resto do programa continua funcionando.",
+        "Para fechar, clique em \"Fechar\" ou aperte Esc com o manual selecionado."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Uso geral",
+      "question": "Um campo ficou vermelho. O que houve?",
+      "steps": [
+        "O que foi digitado nele está incompleto ou errado, como uma data que não existe ou um CPF com números faltando.",
+        "A mensagem que aparece diz o que corrigir. Ao corrigir, o vermelho some."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Uso geral",
+      "question": "A letra está pequena (ou grande demais).",
+      "steps": [
+        "Clique em \"Olá, seu nome\", no canto de cima, e em \"Aumentar a letra\" ou \"Diminuir a letra\".",
+        "Pelo teclado: Ctrl + (mais) aumenta, Ctrl − (menos) diminui e Ctrl 0 volta ao normal."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Uso geral",
+      "question": "Apareceu \"não foi possível conectar ao banco de dados\".",
+      "steps": [
+        "Confira se o computador servidor da clínica está ligado e conectado à rede.",
+        "Feche e abra o SisDoc de novo. Se continuar, fale com o suporte (veja \"Sobre o SisDoc\")."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Uso geral",
+      "question": "Como usar os dados de outro computador (ou voltar a usar os deste)?",
+      "steps": [
+        "Abra o \"SisDoc - Banco de dados\": no Menu Iniciar, na pasta do SisDoc, ou no SisDoc em \"Olá, seu nome\" > \"Banco de dados\" (só para o administrador). O Windows pede permissão de administrador.",
+        "Na aba \"Banco em uso\", para usar os dados de outro computador, escolha \"Usar os dados do computador principal\" e digite o nome dele, o caminho de rede (ex.: \\\\RECEPCAO-PC\\SisDoc) ou o IP. O caminho de uma pasta como C:\\... não serve: ele é de dentro do outro computador.",
+        "Para voltar a usar os dados guardados neste computador, escolha \"Este é o computador principal da clínica\". A senha já vem preenchida.",
+        "Digite a senha do banco (no computador principal: \"SisDoc - Banco de dados\", aba \"Estações\") e clique em \"Conectar\". Feche e abra o SisDoc para usar os dados escolhidos. Nada é apagado."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Uso geral",
+      "question": "Como fazer um backup ou começar com um banco novo?",
+      "steps": [
+        "No computador principal, abra o \"SisDoc - Banco de dados\" (Menu Iniciar > SisDoc).",
+        "Aba \"Backup\": \"Fazer backup agora\" e a lista dos backups, com \"Restaurar\". O backup também é feito sozinho todo dia às 21:00.",
+        "Aba \"Bancos deste computador\": \"Começar com um banco novo e vazio\" guarda o atual com outro nome, e \"Usar este banco\" volta a um guardado. Nada é apagado.",
+        "Antes de restaurar ou trocar de banco, feche o SisDoc em todos os computadores da clínica."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Uso geral",
+      "question": "Apareceu \"Ativar o SisDoc neste computador\". O que eu faço?",
+      "steps": [
+        "Cada computador precisa ser ativado uma vez, na primeira vez que o SisDoc abre nele.",
+        "Chame o responsável pelo SisDoc: só ele tem o e-mail e a senha de ativação. Depois disso, o SisDoc abre direto nesse computador.",
+        "Se o Windows do computador for reinstalado, a ativação é pedida de novo."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Uso geral",
+      "question": "Apareceu \"Nova versão do SisDoc\". O que eu faço?",
+      "steps": [
+        "Clique em \"Atualizar agora\". O SisDoc baixa a versão nova e mostra o andamento; dá para continuar usando enquanto isso.",
+        "No fim, o Windows pede permissão de administrador. Aceite: o SisDoc fecha, se atualiza sozinho e abre de novo. Os dados da clínica não mudam.",
+        "Está no meio de um atendimento? Clique em \"Cancelar\". O aviso volta na próxima vez que abrir o SisDoc."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Uso geral",
+      "question": "Como sair do SisDoc?",
+      "steps": [
+        "Clique em \"Olá, seu nome\", no canto de cima, e em \"Sair do SisDoc\"."
+      ],
+      "colors": []
+    }
+  ],
+  "shortcutGroups": [
+    {
+      "name": "Em qualquer tela",
+      "shortcuts": [
+        {
+          "keys": [
+            "F1"
+          ],
+          "whatItDoes": "Abrir este manual"
+        },
+        {
+          "keys": [
+            "Ctrl",
+            "M"
+          ],
+          "whatItDoes": "Marcar consulta"
+        },
+        {
+          "keys": [
+            "Ctrl",
+            "N"
+          ],
+          "whatItDoes": "Cadastrar paciente novo"
+        },
+        {
+          "keys": [
+            "Ctrl",
+            "F"
+          ],
+          "whatItDoes": "Procurar paciente"
+        },
+        {
+          "keys": [
+            "Ctrl",
+            "E"
+          ],
+          "whatItDoes": "Lista de espera"
+        },
+        {
+          "keys": [
+            "Ctrl",
+            "R"
+          ],
+          "whatItDoes": "Relatórios"
+        },
+        {
+          "keys": [
+            "Ctrl",
+            "1"
+          ],
+          "whatItDoes": "Ir para a agenda"
+        },
+        {
+          "keys": [
+            "Ctrl",
+            "2"
+          ],
+          "whatItDoes": "Ir para os pacientes"
+        },
+        {
+          "keys": [
+            "Ctrl",
+            "3"
+          ],
+          "whatItDoes": "Voltar ao atendimento aberto"
+        },
+        {
+          "keys": [
+            "F5"
+          ],
+          "whatItDoes": "Atualizar a tela"
+        },
+        {
+          "keys": [
+            "Ctrl",
+            "Mais"
+          ],
+          "whatItDoes": "Aumentar a letra"
+        },
+        {
+          "keys": [
+            "Ctrl",
+            "Menos"
+          ],
+          "whatItDoes": "Diminuir a letra"
+        },
+        {
+          "keys": [
+            "Ctrl",
+            "0"
+          ],
+          "whatItDoes": "Letra normal"
+        }
+      ]
+    },
+    {
+      "name": "Agenda",
+      "shortcuts": [
+        {
+          "keys": [
+            "Ctrl",
+            "H"
+          ],
+          "whatItDoes": "Voltar para hoje"
+        },
+        {
+          "keys": [
+            "Alt",
+            "←"
+          ],
+          "whatItDoes": "Dia anterior"
+        },
+        {
+          "keys": [
+            "Alt",
+            "→"
+          ],
+          "whatItDoes": "Próximo dia"
+        },
+        {
+          "keys": [
+            "Ctrl",
+            "Enter"
+          ],
+          "whatItDoes": "Próximo passo da consulta escolhida"
+        },
+        {
+          "keys": [
+            "Delete"
+          ],
+          "whatItDoes": "Excluir a consulta escolhida"
+        },
+        {
+          "keys": [
+            "Ctrl",
+            "Z"
+          ],
+          "whatItDoes": "Desfazer (apertando de novo, desfaz as anteriores)"
+        },
+        {
+          "keys": [
+            "Ctrl",
+            "P"
+          ],
+          "whatItDoes": "Imprimir a agenda do dia"
+        },
+        {
+          "keys": [
+            "Esc"
+          ],
+          "whatItDoes": "Tirar a seleção"
+        }
+      ]
+    },
+    {
+      "name": "Atendimento",
+      "shortcuts": [
+        {
+          "keys": [
+            "Alt",
+            "1"
+          ],
+          "whatItDoes": "Anotação"
+        },
+        {
+          "keys": [
+            "Alt",
+            "2"
+          ],
+          "whatItDoes": "Receita"
+        },
+        {
+          "keys": [
+            "Alt",
+            "3"
+          ],
+          "whatItDoes": "Atestado"
+        },
+        {
+          "keys": [
+            "Alt",
+            "4"
+          ],
+          "whatItDoes": "Pedido de exames"
+        },
+        {
+          "keys": [
+            "Ctrl",
+            "P"
+          ],
+          "whatItDoes": "Imprimir o documento da aba aberta"
+        }
+      ]
+    },
+    {
+      "name": "Pacientes",
+      "shortcuts": [
+        {
+          "keys": [
+            "Ctrl",
+            "S"
+          ],
+          "whatItDoes": "Salvar os dados do paciente"
+        },
+        {
+          "keys": [
+            "Esc"
+          ],
+          "whatItDoes": "Fechar a ficha"
+        }
+      ]
+    },
+    {
+      "name": "Janelas",
+      "shortcuts": [
+        {
+          "keys": [
+            "Enter"
+          ],
+          "whatItDoes": "Confirmar (botão escuro)"
+        },
+        {
+          "keys": [
+            "Esc"
+          ],
+          "whatItDoes": "Fechar ou cancelar"
+        },
+        {
+          "keys": [
+            "Ctrl",
+            "L"
+          ],
+          "whatItDoes": "Procurar horário livre, ao marcar consulta"
+        }
+      ]
+    }
+  ]
+}

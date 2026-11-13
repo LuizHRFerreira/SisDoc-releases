@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SisDoc · Sistema para consultório médico</title>
+  <meta name="description" content="Agenda de consultas, cadastro de pacientes, receitas, atestados, pedidos de exame e prontuários num só programa, para a recepção e para o médico.">
+  <meta property="og:title" content="SisDoc · Sistema para consultório médico">
+  <meta property="og:description" content="A agenda e os prontuários do consultório num só lugar. Funciona em todos os computadores da clínica, mesmo sem internet.">
+  <meta property="og:image" content="images/31-agenda-dia.png">
+  <meta name="theme-color" content="#143D30">
+  <link rel="icon" type="image/png" href="assets/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="./" aria-label="SisDoc, página inicial">
+        <img class="logo-light" src="assets/logo.png" alt="SisDoc" width="104" height="34">
+        <img class="logo-dark" src="assets/logo-white.png" alt="SisDoc" width="104" height="34">
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir o menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <nav class="nav" id="menu" aria-label="Principal">
+        <a href="./" aria-current="page">Início</a>
+        <a href="baixar.html">Baixar e instalar</a>
+        <a href="manual.html">Manual</a>
+        <a href="novidades.html">Novidades</a>
+        <a class="btn btn-primary btn-sm" href="baixar.html">Baixar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <div class="hero">
+      <div class="container">
+        <p class="eyebrow">Sistema para consultório médico</p>
+        <h1>A agenda e os prontuários do consultório num só lugar</h1>
+        <p class="lead">O SisDoc marca consultas, avisa quem chegou, faz receitas, atestados e pedidos de exame e guarda o histórico de cada paciente. Funciona em todos os computadores da clínica, mesmo sem internet.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="baixar.html">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+            Baixar para Windows
+          </a>
+          <a class="btn btn-secondary btn-lg" href="manual.html">Ver o manual</a>
+        </div>
+        <p class="hero-meta" data-release-summary>Windows 10 ou 11 · 64 bits</p>
+        <div class="hero-shot">
+          <div class="window">
+            <div class="window-bar" aria-hidden="true"><span></span><span></span><span></span><em>SisDoc · Agenda</em></div>
+            <img src="images/31-agenda-dia.png" width="1280" height="800" alt="Tela da agenda do SisDoc: à esquerda o calendário e o resumo do dia, à direita as consultas do dia com o nome do paciente, o convênio e etiquetas como Chegou, Próximo, Faltou e 1ª consulta.">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section-alt" id="para-quem">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow">Para cada pessoa da clínica</p>
+          <h2>Cada um vê o que precisa</h2>
+          <p class="lead">Quem entra no SisDoc escolhe o próprio usuário, e a tela se ajusta ao trabalho de cada um.</p>
+        </div>
+        <div class="cards">
+          <article class="card reveal">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+            <h3>Recepção</h3>
+            <p class="muted">Cuida da agenda do dia sem ver o que é sigiloso.</p>
+            <ul class="checklist">
+              <li>Marca, muda e desmarca consultas</li>
+              <li>Registra chegada e faltas</li>
+              <li>Cadastra pacientes e anexa documentos</li>
+              <li>Não vê prontuário nem exames</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3v6a4 4 0 0 0 8 0V3"/><path d="M10 13v3a5 5 0 0 0 10 0v-2"/><circle cx="20" cy="12" r="2"/></svg></div>
+            <h3>Médico</h3>
+            <p class="muted">Atende com o histórico do paciente ao lado.</p>
+            <ul class="checklist">
+              <li>Vê quem está na sala de espera</li>
+              <li>Escreve no prontuário durante a consulta</li>
+              <li>Faz receita, atestado e pedido de exames</li>
+              <li>Tem a própria agenda e horários</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></div>
+            <h3>Administrador</h3>
+            <p class="muted">Deixa a clínica pronta e os dados seguros.</p>
+            <ul class="checklist">
+              <li>Cadastra médicos, convênios e acessos</li>
+              <li>Escolhe o que cada pessoa pode ver</li>
+              <li>Acompanha o backup diário</li>
+              <li>Liga os outros computadores da clínica</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="recursos">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow">Recursos</p>
+          <h2>Do agendamento ao prontuário</h2>
+          <p class="lead">Tudo o que acontece com o paciente, da marcação à consulta, fica num só lugar e aparece em todos os computadores ao mesmo tempo.</p>
+        </div>
+
+        <div class="feature reveal">
+          <div class="feature-text">
+            <p class="eyebrow">Agenda</p>
+            <h3>O dia inteiro numa olhada</h3>
+            <p class="lead">Cores mostram quem chegou, quem está atrasado e quem é o próximo. Encaixes aparecem lado a lado, e a lista de espera adianta a consulta quando abre uma vaga.</p>
+            <ul class="checklist">
+              <li>Horários livres sugeridos ao marcar</li>
+              <li>Bloqueio de férias, congressos e viagens</li>
+              <li>Ver um dia, vários dias ou a semana</li>
+              <li>Errou um clique? <kbd>Ctrl</kbd> + <kbd>Z</kbd> desfaz</li>
+            </ul>
+          </div>
+          <div class="window">
+            <div class="window-bar" aria-hidden="true"><span></span><span></span><span></span><em>Agenda · vários dias</em></div>
+            <img src="images/32-agenda-varios-dias.png" width="1280" height="800" loading="lazy" alt="Agenda de segunda a sexta lado a lado, com consultas atendidas em azul, quem chegou em verde, faltas e dias bloqueados.">
+          </div>
+        </div>
+
+        <div class="feature reverse reveal">
+          <div class="feature-text">
+            <p class="eyebrow">Atendimento</p>
+            <h3>Receita, atestado e exames sem sair da consulta</h3>
+            <p class="lead">A ficha do paciente fica à esquerda e as abas de anotação, receita, atestado e pedido de exames à direita. Os documentos saem prontos para o papel timbrado, com o nome e o CRM do médico.</p>
+            <ul class="checklist">
+              <li>Catálogo de remédios e uso contínuo</li>
+              <li>Modelos de atestado e de exames</li>
+              <li>O que foi escrito fica guardado sozinho</li>
+            </ul>
+          </div>
+          <div class="window">
+            <div class="window-bar" aria-hidden="true"><span></span><span></span><span></span><em>Atendimento · Receita</em></div>
+            <img src="images/23-atendimento-receita.png" width="1280" height="800" loading="lazy" alt="Tela de atendimento: à esquerda a ficha resumida do paciente, à direita a aba Receita com dois remédios e o botão Imprimir receita.">
+          </div>
+        </div>
+
+        <div class="feature reveal">
+          <div class="feature-text">
+            <p class="eyebrow">Pacientes</p>
+            <h3>O histórico completo de cada paciente</h3>
+            <p class="lead">Dados, consultas, prontuário, exames, documentos emitidos e anexos numa ficha só. Cada anotação mostra quem escreveu e quando.</p>
+            <ul class="checklist">
+              <li>Busca por nome, número do prontuário ou CPF</li>
+              <li>Impressão do prontuário por período ou por anotação</li>
+              <li>Laudos, fotos e PDFs anexados à ficha</li>
+            </ul>
+          </div>
+          <div class="window">
+            <div class="window-bar" aria-hidden="true"><span></span><span></span><span></span><em>Pacientes · Prontuário</em></div>
+            <img src="images/44-imprimir-prontuario.png" width="1280" height="800" loading="lazy" alt="Ficha do paciente na aba Prontuário, com as anotações anteriores, o nome do médico em cada uma e as opções para imprimir.">
+          </div>
+        </div>
+
+        <div class="feature reverse reveal">
+          <div class="feature-text">
+            <p class="eyebrow">Primeiro uso</p>
+            <h3>Pronto para usar em poucos minutos</h3>
+            <p class="lead">Na primeira vez, o SisDoc mostra o que falta cadastrar: médicos, horários, convênios e o acesso da recepção. Quem já usa o SisDoc antigo traz tudo de lá com um clique.</p>
+            <ul class="checklist">
+              <li>Horários já vêm preenchidos, é só ajustar</li>
+              <li>Importação do SisDoc antigo, com anexos</li>
+            </ul>
+          </div>
+          <div class="window">
+            <div class="window-bar" aria-hidden="true"><span></span><span></span><span></span><em>Primeiros passos</em></div>
+            <img src="images/42-primeiros-passos.png" width="1280" height="800" loading="lazy" alt="Tela Primeiros passos com quatro etapas: cadastrar os médicos, horário de atendimento, convênios e acesso da recepção.">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-alt" id="mais">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow">E também</p>
+          <h2>Feito para a rotina da clínica</h2>
+        </div>
+        <div class="mini-grid">
+          <div class="mini reveal">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="2" width="6" height="6" rx="1"/><rect x="2" y="16" width="6" height="6" rx="1"/><rect x="16" y="16" width="6" height="6" rx="1"/><path d="M12 8v4M5 16v-2h14v2"/></svg></div>
+            <h3>Vários computadores</h3>
+            <p>Recepção e consultórios usam os mesmos dados, atualizados na hora.</p>
+          </div>
+          <div class="mini reveal">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 2 20 20"/><path d="M8.5 16.5a5 5 0 0 1 7 0"/><path d="M5 12.9a10 10 0 0 1 5.2-2.8M19 12.9a10 10 0 0 0-2-1.5"/><path d="M12 20h.01"/></svg></div>
+            <h3>Sem depender da internet</h3>
+            <p>Os dados ficam no computador principal da clínica, não na nuvem.</p>
+          </div>
+          <div class="mini reveal">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></div>
+            <h3>Backup todo dia</h3>
+            <p>Uma cópia dos dados é feita sozinha, às 21:00, no computador principal.</p>
+          </div>
+          <div class="mini reveal">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 0 1-15.5 6.2L3 16"/><path d="M3 12a9 9 0 0 1 15.5-6.2L21 8"/><path d="M21 3v5h-5M3 21v-5h5"/></svg></div>
+            <h3>Atualiza sozinho</h3>
+            <p>Quando sai uma versão nova, o SisDoc avisa e se instala com um clique.</p>
+          </div>
+          <div class="mini reveal">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div>
+            <h3>Relatórios</h3>
+            <p>Consultas, faltas, convênios, pacientes novos e aniversariantes, por período e por médico.</p>
+          </div>
+          <div class="mini reveal">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div>
+            <h3>Acessos por pessoa</h3>
+            <p>Cada um entra com o próprio usuário e vê só o que o perfil permite.</p>
+          </div>
+          <div class="mini reveal">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7V5h10v2M9 5v14M7 19h4"/><path d="M14 13v-1h7v1M17.5 12v7M16 19h3"/></svg></div>
+            <h3>Letra do seu tamanho</h3>
+            <p>Aumente ou diminua a letra de todas as telas com <kbd>Ctrl</kbd> + <kbd>+</kbd>.</p>
+          </div>
+          <div class="mini reveal">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg></div>
+            <h3>Manual dentro do programa</h3>
+            <p>Aperte <kbd>F1</kbd> em qualquer tela para ver o passo a passo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="como-comecar">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow">Como começar</p>
+          <h2>Três passos até a primeira consulta</h2>
+        </div>
+        <div class="steps-row">
+          <div class="card step-card reveal">
+            <h3>Baixe o instalador</h3>
+            <p class="muted">Um arquivo só, que já traz o programa e o banco de dados. Não precisa instalar mais nada.</p>
+          </div>
+          <div class="card step-card reveal">
+            <h3>Instale no computador principal</h3>
+            <p class="muted">O que fica ligado o dia todo. Depois, instale nos outros computadores da clínica.</p>
+          </div>
+          <div class="card step-card reveal">
+            <h3>Cadastre e comece</h3>
+            <p class="muted">Médicos, horários e convênios. Em seguida, a agenda já está pronta para marcar.</p>
+          </div>
+        </div>
+        <p class="reveal" style="text-align:center;margin-top:32px"><a href="baixar.html">Ver o passo a passo da instalação →</a></p>
+      </div>
+    </section>
+
+    <section class="section-alt" id="perguntas">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow">Perguntas frequentes</p>
+          <h2>Dúvidas comuns</h2>
+        </div>
+        <div class="faq">
+          <details class="reveal">
+            <summary>Precisa de internet para usar?</summary>
+            <div><p>Não. Os computadores da clínica conversam pela rede local. A internet só é usada para baixar o instalador e as atualizações.</p></div>
+          </details>
+          <details class="reveal">
+            <summary>Onde ficam os dados dos pacientes?</summary>
+            <div><p>No computador principal da clínica, que guarda o banco de dados e faz um backup todo dia às 21:00. Nada é enviado para a internet. De vez em quando, copie a pasta de backups para um HD externo.</p></div>
+          </details>
+          <details class="reveal">
+            <summary>Quantos computadores posso usar?</summary>
+            <div><p>Quantos a clínica tiver, desde que estejam na mesma rede. Instale primeiro no computador principal e depois nos outros, com o mesmo instalador.</p></div>
+          </details>
+          <details class="reveal">
+            <summary>Funciona no Mac ou no celular?</summary>
+            <div><p>O instalador é para Windows 10 ou 11, de 64 bits. Não há versão para celular.</p></div>
+          </details>
+          <details class="reveal">
+            <summary>Já uso o SisDoc antigo. Perco alguma coisa?</summary>
+            <div><p>Não. Na primeira vez que abrir, escolha <b>Importar do SisDoc antigo</b>: médicos, convênios, pacientes, consultas, prontuários e anexos vêm junto, e os usuários e senhas continuam os mesmos. O arquivo antigo só é lido, nunca alterado.</p></div>
+          </details>
+          <details class="reveal">
+            <summary>Como faço para ativar o SisDoc?</summary>
+            <div><p>Na primeira vez em cada computador, aparece a tela <b>Ativar o SisDoc neste computador</b>. A ativação é feita pelo responsável pelo SisDoc, uma vez só: chame-o na hora de instalar.</p></div>
+          </details>
+          <details class="reveal">
+            <summary>Como recebo as versões novas?</summary>
+            <div><p>Sozinho. Ao abrir, o SisDoc avisa quando há versão nova: clique em <b>Atualizar agora</b> e aceite a permissão do Windows. Os dados da clínica não mudam. Veja o que mudou em <a href="novidades.html">Novidades</a>.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="comecar">
+      <div class="container">
+        <div class="cta-band reveal">
+          <h2>Comece a usar o SisDoc</h2>
+          <p>Baixe o instalador, siga o passo a passo e, se tiver dúvida, consulte o manual.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-lg" href="baixar.html">Baixar para Windows</a>
+            <a class="btn btn-ghost-light btn-lg" href="manual.html">Ver o manual</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img class="logo-light" src="assets/logo.png" alt="SisDoc" width="91" height="30">
+          <img class="logo-dark" src="assets/logo-white.png" alt="SisDoc" width="91" height="30">
+          <p>Sistema para consultório médico: agenda, pacientes, documentos e prontuários.</p>
+        </div>
+        <div>
+          <h4>Programa</h4>
+          <ul>
+            <li><a href="baixar.html">Baixar</a></li>
+            <li><a href="baixar.html#instalar">Como instalar</a></li>
+            <li><a href="novidades.html">Novidades</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ajuda</h4>
+          <ul>
+            <li><a href="manual.html">Manual</a></li>
+            <li><a href="manual.html#/atalhos">Atalhos de teclado</a></li>
+            <li><a href="baixar.html#problemas">Se algo der errado</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> SisDoc</span>
+        <span data-release-version></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/site.js" defer></script>
+</body>
+</html>

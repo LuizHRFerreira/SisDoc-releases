@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Novidades · SisDoc</title>
+  <meta name="description" content="O que mudou em cada versão do SisDoc.">
+  <meta name="theme-color" content="#143D30">
+  <link rel="icon" type="image/png" href="assets/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="./" aria-label="SisDoc, página inicial">
+        <img class="logo-light" src="assets/logo.png" alt="SisDoc" width="104" height="34">
+        <img class="logo-dark" src="assets/logo-white.png" alt="SisDoc" width="104" height="34">
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir o menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <nav class="nav" id="menu" aria-label="Principal">
+        <a href="./">Início</a>
+        <a href="baixar.html">Baixar e instalar</a>
+        <a href="manual.html">Manual</a>
+        <a href="novidades.html" aria-current="page">Novidades</a>
+        <a class="btn btn-primary btn-sm" href="baixar.html">Baixar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <div class="page-head">
+      <div class="container narrow">
+        <p class="eyebrow">Novidades</p>
+        <h1>O que mudou em cada versão</h1>
+        <p class="lead">Quem já usa o SisDoc recebe as versões novas sozinho: ao abrir, ele avisa e se atualiza com um clique.</p>
+      </div>
+    </div>
+    <div class="container narrow" style="padding-bottom:96px">
+      <div id="releases" aria-live="polite">
+        <p class="muted">Carregando as versões…</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img class="logo-light" src="assets/logo.png" alt="SisDoc" width="91" height="30">
+          <img class="logo-dark" src="assets/logo-white.png" alt="SisDoc" width="91" height="30">
+          <p>Sistema para consultório médico: agenda, pacientes, documentos e prontuários.</p>
+        </div>
+        <div>
+          <h4>Programa</h4>
+          <ul>
+            <li><a href="baixar.html">Baixar</a></li>
+            <li><a href="baixar.html#instalar">Como instalar</a></li>
+            <li><a href="novidades.html">Novidades</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ajuda</h4>
+          <ul>
+            <li><a href="manual.html">Manual</a></li>
+            <li><a href="manual.html#/atalhos">Atalhos de teclado</a></li>
+            <li><a href="baixar.html#problemas">Se algo der errado</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> SisDoc</span>
+        <span data-release-version></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/site.js" defer></script>
+  <script src="assets/news.js" defer></script>
+</body>
+</html>

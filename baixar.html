@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Baixar e instalar · SisDoc</title>
+  <meta name="description" content="Baixe o instalador do SisDoc para Windows e siga o passo a passo para instalar no computador principal e nos outros computadores da clínica.">
+  <meta name="theme-color" content="#143D30">
+  <link rel="icon" type="image/png" href="assets/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="./" aria-label="SisDoc, página inicial">
+        <img class="logo-light" src="assets/logo.png" alt="SisDoc" width="104" height="34">
+        <img class="logo-dark" src="assets/logo-white.png" alt="SisDoc" width="104" height="34">
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir o menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <nav class="nav" id="menu" aria-label="Principal">
+        <a href="./">Início</a>
+        <a href="baixar.html" aria-current="page">Baixar e instalar</a>
+        <a href="manual.html">Manual</a>
+        <a href="novidades.html">Novidades</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <div class="page-head">
+      <div class="container narrow">
+        <p class="eyebrow">Baixar e instalar</p>
+        <h1>Instale o SisDoc em poucos minutos</h1>
+        <p class="lead">Um instalador só serve para todos os computadores da clínica. Ele já traz o programa e o banco de dados: não precisa instalar mais nada.</p>
+
+        <div class="download-card">
+          <img class="app-icon" src="assets/icon.png" width="64" height="64" alt="">
+          <div>
+            <h2>SisDoc para Windows</h2>
+            <p data-release-detail>Última versão publicada</p>
+            <div class="download-facts">
+              <span class="chip">Windows 10 ou 11</span>
+              <span class="chip">64 bits</span>
+              <span class="chip" data-release-size>cerca de 400 MB</span>
+            </div>
+          </div>
+          <a class="btn btn-primary btn-lg" data-download-link href="https://github.com/LuizHRFerreira/SisDoc-releases/releases/latest">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+            <span data-download-label>Baixar o SisDoc</span>
+          </a>
+        </div>
+        <p class="small muted" style="margin-top:14px">Já tem o SisDoc instalado? Não precisa baixar de novo: ele avisa e se atualiza sozinho. <a href="novidades.html">Veja as versões anteriores e o que mudou</a>.</p>
+
+        <nav class="toc-chips" aria-label="Nesta página">
+          <a href="#antes">Antes de começar</a>
+          <a href="#instalar">Computador principal</a>
+          <a href="#outros">Outros computadores</a>
+          <a href="#depois">Depois de instalar</a>
+          <a href="#problemas">Se algo der errado</a>
+        </nav>
+      </div>
+    </div>
+
+    <section class="section-alt" id="antes" style="padding-top:64px;padding-bottom:64px">
+      <div class="container narrow">
+        <h2>Antes de começar</h2>
+        <div class="cards two" style="margin-top:24px">
+          <div class="card">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+            <h3>Escolha o computador principal</h3>
+            <p class="muted">É o que fica ligado o dia todo e guarda os dados. Normalmente, o da recepção.</p>
+            <ul class="checklist">
+              <li>Desligue a suspensão: <i>Opções de energia → Nunca</i></li>
+              <li>Peça ao técnico um IP fixo para ele</li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="2" width="6" height="6" rx="1"/><rect x="2" y="16" width="6" height="6" rx="1"/><rect x="16" y="16" width="6" height="6" rx="1"/><path d="M12 8v4M5 16v-2h14v2"/></svg></div>
+            <h3>Confira a rede e o acesso</h3>
+            <p class="muted">Para instalar, o Windows pede permissão de administrador.</p>
+            <ul class="checklist">
+              <li>Todos os computadores na mesma rede (o Wi-Fi de convidados não serve)</li>
+              <li>Vindo do SisDoc antigo? Tenha à mão o arquivo <code>.mdb</code> e a pasta <b>Anexos</b></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="instalar" style="padding-top:72px;padding-bottom:72px">
+      <div class="container narrow">
+        <h2>No computador principal</h2>
+        <p class="lead" style="margin-bottom:36px">Faça primeiro neste computador. Os outros vêm depois.</p>
+        <ol class="timeline">
+          <li>
+            <h3>Baixe e abra o instalador</h3>
+            <p>Clique em <b>Baixar o SisDoc</b>, espere o download terminar e abra o arquivo <code>SisDoc-Setup-…exe</code>, na pasta <b>Downloads</b>.</p>
+          </li>
+          <li>
+            <h3>Passe pelo aviso azul do Windows</h3>
+            <p>Se aparecer a tela <b>"O Windows protegeu o computador"</b>, clique em <b>Mais informações</b> e depois em <b>Executar assim mesmo</b>. É normal: o aviso aparece porque o SisDoc ainda é pouco conhecido pelo Windows.</p>
+            <span class="smartscreen">Mais informações <span aria-hidden="true">→</span> <b>Executar assim mesmo</b></span>
+            <p style="margin-top:12px">Depois, quando o Windows perguntar se o programa pode fazer alterações, clique em <b>Sim</b>.</p>
+          </li>
+          <li>
+            <h3>Escolha "Computador principal da clínica"</h3>
+            <p>Clique em <b>Avançar</b> até o fim e espere alguns minutos: a tela mostra as etapas 1 de 3, 2 de 3 e 3 de 3.</p>
+            <p>Este computador já tinha o SisDoc? Escolha <b>Usar o banco que já existe</b> para continuar com os mesmos dados.</p>
+          </li>
+          <li>
+            <h3>Anote a senha do banco de dados</h3>
+            <p>Ela aparece no fim da instalação. <b>Tire uma foto ou anote</b>: os outros computadores vão precisar dela.</p>
+            <div class="callout info">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 16v-4M12 8h.01"/></svg>
+              <p>Perdeu a senha? Ela fica em <i>Menu Iniciar → SisDoc → SisDoc - Banco de dados</i>, aba <b>Estações</b>.</p>
+            </div>
+          </li>
+          <li>
+            <h3>Ative o SisDoc</h3>
+            <p>Abra o SisDoc pelo ícone na área de trabalho. Na tela <b>Ativar o SisDoc neste computador</b>, chame o responsável pelo SisDoc: só ele tem o e-mail e a senha de ativação. É uma vez só por computador.</p>
+          </li>
+          <li>
+            <h3>Comece do zero ou traga o SisDoc antigo</h3>
+            <p><b>Começar do zero:</b> crie o primeiro usuário, que será o administrador, e entre com ele.</p>
+            <p><b>Importar do SisDoc antigo:</b> escolha o arquivo <code>.mdb</code> e a pasta <b>Anexos</b>. Médicos, convênios, pacientes, consultas e prontuários vêm junto. Entre com o mesmo usuário e senha de antes.</p>
+          </li>
+          <li>
+            <h3>Cadastre a clínica</h3>
+            <p>A tela <b>Primeiros passos</b> abre sozinha. Cadastre os médicos, os horários de atendimento, os convênios e o acesso da recepção. Depois, clique em <b>Pronto! Ir para a agenda</b>.</p>
+            <img class="zoomable" src="images/42-primeiros-passos.png" width="1280" height="800" loading="lazy" style="border-radius:12px;border:1px solid var(--border);margin-top:14px" alt="Tela Primeiros passos do SisDoc, com as quatro etapas de cadastro da clínica.">
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section-alt" id="outros" style="padding-top:72px;padding-bottom:72px">
+      <div class="container narrow">
+        <h2>Nos outros computadores</h2>
+        <p class="lead" style="margin-bottom:36px">Recepção, consultórios e qualquer outro computador da clínica. O computador principal precisa estar ligado.</p>
+        <ol class="timeline">
+          <li>
+            <h3>Abra o mesmo instalador</h3>
+            <p>Escolha <b>Outro computador da clínica</b>. Nesse modo, só o programa é instalado.</p>
+          </li>
+          <li>
+            <h3>Ative e conecte ao computador principal</h3>
+            <p>Abra o SisDoc, ative com o responsável e escolha <b>Usar os dados do computador principal</b>. O SisDoc procura o principal na rede e preenche o endereço sozinho.</p>
+            <p>Não achou? Digite o nome do computador principal (ex.: <code>RECEPCAO-PC</code> ou <code>\\RECEPCAO-PC</code>) ou o IP dele (ex.: <code>192.168.0.10</code>). Eles aparecem no principal, no <b>SisDoc - Banco de dados</b>, aba <b>Estações</b>.</p>
+          </li>
+          <li>
+            <h3>Digite a senha do banco</h3>
+            <p>A mesma que você anotou no computador principal. Clique em <b>Conectar</b> e entre com o usuário e a senha da pessoa.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="depois" style="padding-top:72px;padding-bottom:72px">
+      <div class="container narrow">
+        <h2>Depois de instalar</h2>
+        <div class="cards two" style="margin-top:24px">
+          <div class="card">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 0 1-15.5 6.2L3 16"/><path d="M3 12a9 9 0 0 1 15.5-6.2L21 8"/><path d="M21 3v5h-5M3 21v-5h5"/></svg></div>
+            <h3>Atualizações</h3>
+            <p class="muted">Quando sai uma versão nova, o SisDoc avisa ao abrir. Clique em <b>Atualizar agora</b> e aceite a permissão do Windows: ele fecha, se atualiza e abre de novo. Os dados não mudam.</p>
+            <p class="muted">Atualize todos os computadores no mesmo dia, começando pelo principal.</p>
+          </div>
+          <div class="card">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></div>
+            <h3>Backup</h3>
+            <p class="muted">O computador principal faz uma cópia dos dados todo dia às 21:00, em <code>C:\ProgramData\SisDoc\Backups</code>. Deixe-o ligado nesse horário.</p>
+            <p class="muted">De vez em quando, copie essa pasta para um HD externo.</p>
+          </div>
+          <div class="card">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></div>
+            <h3>SisDoc - Banco de dados</h3>
+            <p class="muted">Programa que vem junto, no Menu Iniciar. Mostra os dados para conectar os outros computadores, faz backup na hora, restaura um backup e troca de onde o SisDoc pega os dados, sem reinstalar.</p>
+          </div>
+          <div class="card">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg></div>
+            <h3>Aprenda a usar</h3>
+            <p class="muted">Aperte <kbd>F1</kbd> em qualquer tela do SisDoc, ou leia o <a href="manual.html">manual completo</a> aqui no site.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-alt" id="problemas" style="padding-top:72px;padding-bottom:72px">
+      <div class="container narrow">
+        <h2>Se algo der errado</h2>
+        <p class="lead" style="margin-bottom:28px">As situações mais comuns e o que fazer em cada uma.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th scope="col">O que aconteceu</th><th scope="col">O que fazer</th></tr></thead>
+            <tbody>
+              <tr><td>O Windows mostrou uma tela azul e não deixou abrir</td><td>Clique em <b>Mais informações</b> e depois em <b>Executar assim mesmo</b>.</td></tr>
+              <tr><td>O instalador diz que o SisDoc está aberto</td><td>Feche o SisDoc e clique em <b>Avançar</b> de novo.</td></tr>
+              <tr><td>O instalador diz que a porta 5432 já está em uso</td><td>Já existe outro banco PostgreSQL no computador. Chame o responsável pelo SisDoc antes de instalar como computador principal.</td></tr>
+              <tr><td>A instalação do banco falhou</td><td>Confira se há espaço no disco e se você aceitou a permissão de administrador. Mande ao responsável pelo SisDoc o arquivo <code>%TEMP%\install-postgresql.log</code>.</td></tr>
+              <tr><td>O outro computador não encontra o principal</td><td>Confira se o principal está ligado e na mesma rede. Digite o nome ou o IP que aparecem no principal, no <b>SisDoc - Banco de dados</b>, aba <b>Estações</b>.</td></tr>
+              <tr><td>"A senha do banco de dados está errada"</td><td>Pegue a senha no principal: <i>Menu Iniciar → SisDoc → SisDoc - Banco de dados</i>, aba <b>Estações</b>.</td></tr>
+              <tr><td>A agenda mostra "Falta cadastrar os médicos"</td><td>Entre com um médico ou administrador e cadastre em <i>"Olá, seu nome" → Médicos e convênios</i>.</td></tr>
+              <tr><td>O aviso de versão nova não aparece</td><td>Confira se o computador tem internet. Versões muito antigas (de antes de novembro de 2026) precisam ser atualizadas à mão uma vez, baixando o instalador aqui.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="margin-top:24px">Não resolveu? Chame o responsável pelo SisDoc e mostre o que apareceu na tela. Se puder, tire uma foto.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img class="logo-light" src="assets/logo.png" alt="SisDoc" width="91" height="30">
+          <img class="logo-dark" src="assets/logo-white.png" alt="SisDoc" width="91" height="30">
+          <p>Sistema para consultório médico: agenda, pacientes, documentos e prontuários.</p>
+        </div>
+        <div>
+          <h4>Programa</h4>
+          <ul>
+            <li><a href="baixar.html">Baixar</a></li>
+            <li><a href="baixar.html#instalar">Como instalar</a></li>
+            <li><a href="novidades.html">Novidades</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ajuda</h4>
+          <ul>
+            <li><a href="manual.html">Manual</a></li>
+            <li><a href="manual.html#/atalhos">Atalhos de teclado</a></li>
+            <li><a href="baixar.html#problemas">Se algo der errado</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> SisDoc</span>
+        <span data-release-version></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/site.js" defer></script>
+</body>
+</html>
