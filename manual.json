@@ -37,7 +37,7 @@
       "question": "Como usar a lista de espera?",
       "steps": [
         "Para pôr alguém que ainda não tem consulta, clique em \"Pôr alguém na lista\", no alto da lista.",
-        "Ao marcar a consulta, marque também \"Pôr também na lista de espera\": o paciente fica com a data marcada e entra na lista para adiantar se abrir vaga.",
+        "Ao marcar a consulta, marque também \"Lista de espera\": o paciente fica com a data marcada e entra na lista para adiantar se abrir vaga.",
         "Quando abrir uma vaga, clique em \"Lista de espera\", no alto da tela. Cada paciente mostra a consulta que já tem marcada.",
         "Clique em \"Adiantar\" para mudar a consulta dele para a vaga (ou \"Marcar\", se ele ainda não tiver consulta). Ele sai da lista sozinho.",
         "Na própria lista dá para pôr alguém que ainda não tem consulta, em \"Pôr na lista\"."
@@ -91,7 +91,7 @@
       "question": "Registrei a chegada (ou o atendimento) por engano. Como volto?",
       "steps": [
         "Clique no nome do paciente na agenda.",
-        "O cartão se abre e mostra um botão para voltar um passo: \"Desfazer chegada\", \"Voltar para a sala de espera\" ou \"Reabrir atendimento\".",
+        "O cartão se abre e mostra um botão para voltar um passo: \"Desfazer chegada\", \"Pausar atendimento\" (o paciente volta para a sala de espera e o que foi escrito fica guardado) ou \"Reabrir atendimento\". Passe o mouse sobre o botão para ver o que ele faz.",
         "Pode clicar quantas vezes precisar: cada clique volta um passo."
       ],
       "colors": []
@@ -201,6 +201,18 @@
     },
     {
       "subject": "Agenda",
+      "question": "O que significam as cores do calendário?",
+      "steps": [
+        "No calendário da agenda, à esquerda, os dias de hoje em diante aparecem pintados conforme a agenda do médico escolhido.",
+        "Verde-claro: ainda tem horário livre nesse dia.",
+        "Rosado: o dia está bloqueado (férias, congresso) ou o bloqueio tomou todos os horários.",
+        "Número apagado: o dia está lotado, sem nenhum horário livre.",
+        "Dia sem cor: o médico não atende nesse dia, ou o dia já passou."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Agenda",
       "question": "Como imprimir a agenda?",
       "steps": [
         "Clique em \"Imprimir\" e escolha \"Agenda do dia\" (todas as consultas) ou \"Só os atendidos\".",
@@ -215,7 +227,7 @@
         "Na agenda, clique no paciente e em \"Iniciar atendimento\". A tela de atendimento abre sozinha.",
         "À esquerda ficam a ficha resumida, os alertas, as últimas consultas, anotações, exames e documentos. Clique em qualquer um para ver inteiro.",
         "Na aba \"Anotação\", escreva o que aconteceu na consulta. Dá para anexar arquivos.",
-        "No fim, clique em \"Finalizar atendimento\", no alto à direita: a anotação vai para o prontuário e a consulta fica como atendida.",
+        "No fim, clique em \"Finalizar atendimento\", no alto à direita, e digite a sua senha de assinatura: a anotação vai para o prontuário assinada e a consulta fica como atendida.",
         "Se precisar voltar para a agenda no meio, clique em \"Voltar à agenda\", no alto à esquerda. O que foi escrito fica guardado. Para continuar, clique no botão \"Atendendo\" (bege, com um ponto verde), no alto, ou em \"Abrir atendimento\" na agenda."
       ],
       "colors": []
@@ -227,7 +239,7 @@
         "Na tela de atendimento, abra a aba \"Receita\".",
         "Digite o nome do remédio. Se ele estiver cadastrado, quantidade, uso e como tomar já vêm preenchidos.",
         "Clique em \"Pôr na receita\". Repita para cada remédio.",
-        "Clique em \"Imprimir receita\". A receita fica guardada em \"Documentos emitidos\" para imprimir de novo."
+        "Clique em \"Assinar e imprimir receita\" e digite a sua senha de assinatura. A receita sai assinada eletronicamente e fica guardada em \"Documentos emitidos\" para imprimir de novo."
       ],
       "colors": []
     },
@@ -247,7 +259,7 @@
       "steps": [
         "Na tela de atendimento, abra a aba \"Atestado\" e escolha um modelo.",
         "O nome do paciente já entra no texto, e você pode mudar o que quiser.",
-        "Clique em \"Imprimir atestado\". Ele sai com a cidade, a data e o seu nome para assinar."
+        "Clique em \"Assinar e imprimir atestado\" e digite a sua senha de assinatura. Ele sai com a cidade, a data, o seu nome, o CRM e a assinatura eletrônica."
       ],
       "colors": []
     },
@@ -257,7 +269,7 @@
       "steps": [
         "Na tela de atendimento, abra a aba \"Pedido de exames\".",
         "Clique nos exames da lista para marcar (vale clicar em qualquer parte do quadro).",
-        "Clique em \"Imprimir pedido\". Com mais de um exame, o SisDoc pergunta se é tudo numa folha ou uma folha para cada.",
+        "Clique em \"Assinar e imprimir pedido\". Com mais de um exame, o SisDoc pergunta se é tudo numa folha ou uma folha para cada; depois, digite a sua senha de assinatura.",
         "Faltou um exame na lista? Clique em \"Editar lista\" e cadastre: abre uma janela por cima, sem sair do atendimento."
       ],
       "colors": []
@@ -279,9 +291,22 @@
       "steps": [
         "Clique em \"Olá, seu nome\", no canto de cima, e em \"Médicos e convênios\". Num banco novo, esta tela abre sozinha com os \"Primeiros passos\".",
         "Médico: clique em \"Novo médico\", preencha o nome, o CRM (sai embaixo da assinatura nos documentos) e quanto dura a consulta. Se ele for usar o SisDoc, crie o usuário e a senha ali mesmo.",
+        "A especialidade não está na lista? Clique em \"Nova especialidade\", ao lado, digite o nome e clique em \"Cadastrar\".",
         "Depois clique em \"Horário de atendimento\" para dizer os dias e horas em que ele atende.",
         "Convênio: digite o nome em \"Convênios\" e clique em \"Adicionar\". \"Desativar\" tira o convênio da marcação sem apagar o que já foi feito.",
         "Médico desmarcado como \"Ativo\" sai da agenda, mas o que ele escreveu continua no prontuário."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Médico",
+      "question": "O que é a senha de assinatura?",
+      "steps": [
+        "É uma segunda senha, só do médico, que vale como a assinatura dele. Ela é diferente da senha de entrar no SisDoc.",
+        "O SisDoc pede essa senha sempre que o médico registra no prontuário, registra o resultado de um exame ou emite uma receita, um atestado ou um pedido de exames.",
+        "O registro sai com \"Assinado eletronicamente por\", o nome, o CRM, a data e a hora. Na tela e na impressão.",
+        "Para cadastrar ou trocar: em \"Médicos e convênios\", abra o médico e preencha \"Senha de assinatura\" duas vezes. Só o próprio médico ou o administrador faz isso. Se o médico ainda não tiver uma, o SisDoc pede para criar na primeira vez que ele assinar.",
+        "Só o médico registra e assina. O administrador vê o prontuário, mas não escreve nele."
       ],
       "colors": []
     },
@@ -343,6 +368,17 @@
     },
     {
       "subject": "Pacientes",
+      "question": "Como fazer receita, atestado ou pedido de exames sem abrir um atendimento?",
+      "steps": [
+        "Abra a ficha do paciente e clique na aba \"Documentos\".",
+        "Clique em \"Receita\", \"Atestado\" ou \"Pedido de exames\". Abre uma janela com as mesmas abas da tela de atendimento.",
+        "Preencha e clique em \"Assinar e imprimir\". Digite a sua senha de assinatura. O documento fica guardado na ficha, como os do atendimento.",
+        "Só o médico emite documentos."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Pacientes",
       "question": "Quando o paciente veio (e quando vem de novo)?",
       "steps": [
         "Abra a ficha do paciente e clique na aba \"Consultas\".",
@@ -355,8 +391,8 @@
       "subject": "Pacientes",
       "question": "Como escrever no prontuário?",
       "steps": [
-        "Abra o paciente e escreva no quadro \"Nova anotação\".",
-        "Clique em \"Registrar no prontuário\". A anotação fica guardada com a data, a hora e o médico que escreveu.",
+        "Abra o paciente, vá até a aba \"Prontuário\" e escreva no quadro \"Escrever uma anotação nova\".",
+        "Clique em \"Assinar e registrar\" e digite a sua senha de assinatura. A anotação fica guardada com a data, a hora, o nome e o CRM do médico e a marca \"Assinado eletronicamente\".",
         "Todo médico vê o prontuário inteiro do paciente, com o nome de quem escreveu cada anotação. A recepção não vê o prontuário nem os exames."
       ],
       "colors": []
@@ -368,7 +404,7 @@
         "Abra o paciente e clique na aba \"Prontuário\".",
         "Marque a caixinha das anotações que quer imprimir, ou escolha as datas em \"De\" e \"Até\" para marcar as de um período. \"Marcar todas\" pega o prontuário inteiro.",
         "Se quiser, marque \"Cada anotação numa folha\".",
-        "Clique em \"Imprimir\". Cada anotação sai com a data, a hora e o nome do médico."
+        "Clique em \"Imprimir\". Cada anotação sai com a data, a hora, o nome do médico e a assinatura eletrônica."
       ],
       "colors": []
     },
@@ -376,9 +412,9 @@
       "subject": "Pacientes",
       "question": "Como registrar o resultado de um exame?",
       "steps": [
-        "Abra o paciente e vá até \"Resultados de exames\".",
-        "Preencha o nome do exame, escolha a data no calendário e escreva o resultado.",
-        "Clique em \"Registrar resultado\"."
+        "Abra o paciente e clique na aba \"Exames\".",
+        "Preencha qual exame, escolha no calendário quando foi feito e escreva o resultado.",
+        "Clique em \"Assinar e registrar\" e digite a sua senha de assinatura."
       ],
       "colors": []
     },
@@ -386,8 +422,8 @@
       "subject": "Pacientes",
       "question": "Como anexar um laudo, foto ou documento?",
       "steps": [
-        "No exame ou na anotação do prontuário: clique em \"Anexar arquivo\" antes de registrar. O arquivo aparece em amarelo e é guardado junto quando você clica em \"Registrar\".",
-        "Para outros documentos (encaminhamento, RG, carteirinha): vá até \"Documentos do paciente\" e clique em \"Anexar arquivo\".",
+        "Na anotação do prontuário (\"Anexar arquivo\") ou no resultado de exame (\"Anexar laudo\"), anexe antes de registrar. O arquivo aparece em amarelo e é guardado junto quando você clica em \"Assinar e registrar\".",
+        "Para outros documentos (encaminhamento, RG, carteirinha): clique na aba \"Anexos\" e em \"Anexar arquivo\".",
         "Dá para anexar PDF, JPG ou PNG de até 20 MB. Para abrir, clique no nome do arquivo, mesmo antes de registrar (o que você escreveu continua lá).",
         "Para excluir um documento da aba \"Anexos\", clique em \"Excluir\" ao lado dele. Arquivos presos a uma anotação ou a um exame fazem parte do prontuário e não são excluídos."
       ],
@@ -511,6 +547,7 @@
       "steps": [
         "No computador principal, abra o \"SisDoc - Banco de dados\" (Menu Iniciar > SisDoc).",
         "Aba \"Backup\": \"Fazer backup agora\" e a lista dos backups, com \"Restaurar\". O backup também é feito sozinho todo dia às 21:00.",
+        "Para guardar também uma cópia em outro lugar (HD externo, pasta de outro computador da rede, ou pasta do Google Drive ou OneDrive), escolha a pasta em \"Guardar também uma cópia em outro lugar\" e clique em \"Salvar e testar\". A tela mostra quando foi a última cópia e avisa se ela falhou.",
         "Aba \"Bancos deste computador\": \"Começar com um banco novo e vazio\" guarda o atual com outro nome, e \"Usar este banco\" volta a um guardado. Nada é apagado.",
         "Antes de restaurar ou trocar de banco, feche o SisDoc em todos os computadores da clínica."
       ],
@@ -518,9 +555,17 @@
     },
     {
       "subject": "Uso geral",
+      "question": "Como ver a senha que estou digitando?",
+      "steps": [
+        "Nos campos de senha, clique no olho, na ponta direita do campo, para ver o que foi digitado. Clique de novo para esconder."
+      ],
+      "colors": []
+    },
+    {
+      "subject": "Uso geral",
       "question": "Apareceu \"Ativar o SisDoc neste computador\". O que eu faço?",
       "steps": [
-        "Cada computador precisa ser ativado uma vez, na primeira vez que o SisDoc abre nele.",
+        "Cada computador precisa ser ativado uma vez. Normalmente isso já é feito no instalador, que pede o e-mail e a senha de licença; se não foi, o SisDoc pede na primeira vez que abre.",
         "Chame o responsável pelo SisDoc: só ele tem o e-mail e a senha de ativação. Depois disso, o SisDoc abre direto nesse computador.",
         "Se o Windows do computador for reinstalado, a ativação é pedida de novo."
       ],

@@ -50,6 +50,10 @@ const IMAGES = {
   "Como usar os dados de outro computador (ou voltar a usar os deste)?": ["10-assistente-conexao", "Tela para conectar aos dados de outro computador."],
   "Apareceu \"Nova versão do SisDoc\". O que eu faço?": ["40-atualizacao", "Janela de atualização baixando a versão nova."],
   "Posso deixar este manual aberto enquanto uso o SisDoc?": ["16-ajuda", "Manual aberto ao lado da agenda."],
+  "O que significam as cores do calendário?": ["31-agenda-dia", "Calendário da agenda com os dias com horário livre e os bloqueados pintados, e a legenda embaixo."],
+  "O que é a senha de assinatura?": ["55-assinatura", "Janela que pede a senha de assinatura antes de registrar no prontuário."],
+  "Como fazer receita, atestado ou pedido de exames sem abrir um atendimento?": ["54-documentos-pela-ficha", "Janela de documentos aberta pela ficha do paciente, na aba Atestado."],
+  "Como fazer um backup ou começar com um banco novo?": ["45-backup", "Aba Backup do SisDoc - Banco de dados, com a cópia em outro lugar."],
 };
 
 const LEGEND = {

@@ -86,8 +86,9 @@
           <div class="card">
             <h3>O que fica registrado</h3>
             <ul class="checklist">
-              <li>Cada anotação do prontuário mostra quem escreveu e quando</li>
-              <li>Ficam registrados: entradas e senhas erradas, quem abriu ou imprimiu prontuário, exames, documentos e anexos, e mudanças de usuários e senhas</li>
+              <li>Cada anotação do prontuário, resultado de exame e documento é <b>assinado eletronicamente</b> pelo médico, com a senha de assinatura dele: mostra nome, CRM, data e hora, e guarda um código que denuncia qualquer mudança no texto</li>
+              <li>Só o médico escreve no prontuário e emite documentos. O administrador lê, mas não escreve</li>
+              <li>Ficam registrados: entradas e senhas erradas, tentativas de assinatura com senha errada, quem abriu ou imprimiu prontuário, exames, documentos e anexos, e mudanças de usuários e senhas</li>
               <li>O administrador vê tudo no relatório <b>Registro de acessos</b></li>
               <li>Paciente não é apagado: fica inativo, com o histórico guardado</li>
             </ul>
@@ -103,7 +104,7 @@
           <div class="card">
             <h3>Instalação e atualizações</h3>
             <ul class="checklist">
-              <li>Cada computador é ativado uma vez pelo responsável pelo SisDoc</li>
+              <li>Cada computador é ativado uma vez pelo responsável pelo SisDoc: o instalador pede o e-mail e a senha de licença</li>
               <li>Antes de instalar uma atualização, o SisDoc confere o arquivo e a assinatura digital do responsável. Se não conferir, apaga e não instala</li>
               <li>A senha do banco fica criptografada em cada computador, e os backups ficam numa pasta que só o administrador do Windows abre</li>
             </ul>
@@ -137,7 +138,7 @@
         </div>
         <ul class="checklist" style="margin-top:16px">
           <li>O SisDoc <b>não tem certificação SBIS/CFM</b> de sistema de registro eletrônico de saúde.</li>
-          <li>O SisDoc <b>não assina documentos com certificado digital ICP-Brasil</b>. Receitas, atestados e pedidos de exame são impressos e assinados à mão pelo médico.</li>
+          <li>O SisDoc <b>não assina documentos com certificado digital ICP-Brasil</b>. A assinatura eletrônica do SisDoc é por senha: registra quem emitiu e quando, mas não substitui o certificado. Receitas, atestados e pedidos de exame continuam sendo impressos e assinados à mão pelo médico.</li>
           <li>Por isso, o prontuário eletrônico do SisDoc <b>não dispensa o prontuário em papel</b> assinado, nos casos em que as normas do CFM exigem.</li>
           <li>O prontuário deve ser guardado por pelo menos 20 anos depois do último registro (Resolução CFM 1.821/2007). No SisDoc, isso depende dos backups que a clínica faz e guarda.</li>
         </ul>
@@ -163,7 +164,8 @@
         <h2>Backup</h2>
         <p>O computador principal faz uma cópia dos dados todo dia às 21:00, em <code>C:\ProgramData\SisDoc\Backups</code>. Os backups têm todos os dados dos pacientes e <b>não são criptografados</b>. Para protegê-los:</p>
         <ul class="checklist">
-          <li>Toda semana, copie a pasta para um HD externo e guarde-o fora do computador principal, de preferência fora da clínica. Assim um defeito, um roubo ou um vírus não leva os dados e o backup juntos.</li>
+          <li>No <b>SisDoc - Banco de dados</b>, aba <b>Backup</b>, escolha uma pasta para a cópia automática de cada backup: um HD externo, a pasta de outro computador da rede ou uma pasta do Google Drive ou OneDrive. Se a cópia falhar, a tela avisa.</li>
+          <li>Mesmo assim, de vez em quando guarde uma cópia num HD fora do computador principal, de preferência fora da clínica. Assim um defeito, um roubo ou um vírus não leva os dados e o backup juntos.</li>
           <li>Ligue o <b>BitLocker</b> (Windows 10 e 11 Pro) no computador principal e no HD externo. Se o computador ou o HD forem roubados, os dados não podem ser lidos.</li>
           <li>De vez em quando, abra o <b>SisDoc - Banco de dados</b>, aba <b>Backup</b>, e confira se há um backup de cada dia.</li>
         </ul>
